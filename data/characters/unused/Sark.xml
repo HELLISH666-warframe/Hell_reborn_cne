@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Sark" icon="sark" color="#205a7a" camx="-680" camy="-100" holdTime="6.1" scale="1.3">
+	<anim name="idle" anim="Idle" x="192.3076923076923" y="-39.230769230769226" fps="30"/>
+	<anim name="singUP" anim="Sing Up" x="187.69230769230768" y="-46.15384615384615" fps="30"/>
+	<anim name="singRIGHT" anim="Sing Right" x="207.69230769230768" y="-56.15384615384615" fps="30"/>
+	<anim name="singLEFT" anim="Sing Left" x="193.07692307692307" y="-23.076923076923077" fps="30"/>
+	<anim name="singDOWN" anim="Sing Down" x="185.3846153846154" y="-30.769230769230766" fps="30"/>
+</character>

@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="starved1" icon="starved" color="#ff0000" x="-280" y="-380" camx="30" camy="-90" holdTime="6.1">
+	<anim name="singDOWN" anim="Down" x="-153" y="-126"/>
+	<anim name="singUP" anim="Up" x="-163" y="-93"/>
+	<anim name="singLEFT" anim="Right" x="-163" y="-105"/>
+	<anim name="singRIGHT" anim="Left" x="-162" y="-99"/>
+	<anim name="idle" anim="idle" x="-157" y="-99"/>
+</character>

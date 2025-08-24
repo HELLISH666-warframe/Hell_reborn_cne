@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Chem_X" icon="chem" color="#d2694d" x="240" y="150" camx="-240" camy="140" holdTime="6.1" scale="1.1">
+	<anim name="idle" anim="Idle" x="239.09090909090907" y="-62.72727272727272"/>
+	<anim name="singLEFT" anim="Right" x="412.7272727272727" y="-79.09090909090908"/>
+	<anim name="singUP" anim="Up" x="229.09090909090907" y="-43.63636363636363"/>
+	<anim name="singDOWN" anim="Down" x="218.18181818181816" y="-117.27272727272727"/>
+	<anim name="singRIGHT" anim="Left" x="72.72727272727272" y="-29.999999999999996"/>
+</character>

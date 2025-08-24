@@ -1,0 +1,13 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="bf_fate" icon="bf" color="#31b0d1" y="350" flipX="true" camx="450" camy="-260">
+	<anim name="idle" anim="Bf Idle" x="405" y="399" fps="30"/>
+	<anim name="singLEFT" anim="Bf Left" x="404" y="414"/>
+	<anim name="singDOWN" anim="Bf Down" x="361" y="424"/>
+	<anim name="singUP" anim="Bf Up" x="443" y="408"/>
+	<anim name="hey" anim="Bf Haha" x="388" y="395"/>
+	<anim name="singRIGHT" anim="Bf Right" x="390" y="400"/>
+	<anim name="deathLoop" anim="bf DIE bump" x="357" y="395" loop="true"/>
+	<anim name="firstDeath" anim="bf DIE" x="337" y="411"/>
+	<anim name="deathConfirm" anim="bf DIE bump" x="327" y="400"/>
+</character>

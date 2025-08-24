@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Lord X" icon="x" color="#505f83" x="1880" y="520" flipX="true" camx="-740" camy="-340">
+	<anim name="" anim="" x="350" y="490"/>
+	<anim name="singDOWN" anim="Down" x="421" y="364"/>
+	<anim name="idle" anim="Idle" x="405" y="439" fps="28"/>
+	<anim name="singLEFT" anim="Left" x="504" y="394" fps="28"/>
+	<anim name="singRIGHT" anim="Right" x="410" y="390" fps="28"/>
+	<anim name="singUP" anim="Up" x="483" y="538" fps="28"/>
+</character>

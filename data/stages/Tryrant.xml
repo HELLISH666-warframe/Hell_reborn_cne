@@ -1,0 +1,18 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.55" folder="stages/">
+    <sprite name="rain" x="0" y="0" sprite="rain" scale="0.85" scroll="0.3" type="loop" />
+        <anim name="rain" anim="rain loop" loop="true" fps="15"/>
+    <sprite name="black_vig" x="0" y="0" sprite="blackvignette"/>
+    <sprite name="furthest_back" x="-1200" y="-800" sprite="Tyrant/Furthest Back"/>
+	<sprite name="behind_floor_layer_7" x="-1200" y="-800" sprite="Tyrant/Behind Floor Layer 7"/>
+	<sprite name="behind_floor_layer_6" x="-1200" y="-800" sprite="Tyrant/Behind Floor Layer 6"/>
+	<sprite name="behind_floor_layer_5" x="-250" y="400" sprite="Tyrant/Behind Floor Layer 5" scale="2"/>
+	<sprite name="behind_floor_layer_4" x="-1200" y="-800" sprite="Tyrant/Behind Floor Layer 4"/>
+	<sprite name="behind_floor_layer_3" x="-1200" y="-800" sprite="Tyrant/Behind Floor Layer 3"/>
+	<sprite name="behind_floor_layer_2" x="-1200" y="-800" sprite="Tyrant/Behind Floor Layer 2"/>
+	<sprite name="behind_floor_layer" x="-1200" y="-800" sprite="Tyrant/Behind Floor Layer"/>
+	<sprite name="floor" scale="2" x="-170" y="1057" sprite="Tyrant/Floor"/>
+	<player x="990" y="180" camxoffset="500" camyoffset="-300" />
+	<girlfriend x="300" y="70" camxoffset="0" camyoffset="0" />
+	<opponent x="60" y="200" camxoffset="0" camyoffset="0" />
+</stage>

@@ -1,0 +1,5 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="egg_tails_no_bitches" icon="gf" color="#00a8ff" x="340" y="350" camx="-150" camy="100" scale="1.7">
+	<anim name="Idle" anim="bush lmao"/>
+</character>

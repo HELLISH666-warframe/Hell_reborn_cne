@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="cream" icon="cream" color="#604860" x="30" y="260" antialiasing="false" camx="-160" camy="240" holdTime="6.1" scale="0.4">
+	<anim name="idle" anim="Idle" x="695" y="97.5"/>
+	<anim name="singLEFT" anim="Left" x="977.5" y="252.5"/>
+	<anim name="singDOWN" anim="Down" x="750" y="-45"/>
+	<anim name="singUP" anim="Up" x="805" y="197.5"/>
+	<anim name="singRIGHT" anim="Right" x="2490" y="225"/>
+</character>

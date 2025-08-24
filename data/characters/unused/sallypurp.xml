@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="sallypurp" icon="sally" color="#653020" antialiasing="false" camx="-210" camy="-40" holdTime="6.1">
+	<anim name="idle" anim="sally idle" x="203" y="86"/>
+	<anim name="singDOWN" anim="sally down" x="180" y="92"/>
+	<anim name="singUP" anim="sally up" x="152" y="92"/>
+	<anim name="singLEFT" anim="sally left" x="64" y="99"/>
+	<anim name="singRIGHT" anim="sally right" x="190" y="87"/>
+</character>

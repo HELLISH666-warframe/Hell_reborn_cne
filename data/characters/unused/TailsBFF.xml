@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="TailsBFF" icon="tails" color="#28281a" y="180" holdTime="6.1">
+	<anim name="singLEFT" anim="Tails Sing Note LEFT" x="-8" y="-12"/>
+	<anim name="singDOWN" anim="Tails Sing Note DOWN" x="-9" y="-66"/>
+	<anim name="singUP" anim="Tails Sing Note UP" x="-66" y="-10"/>
+	<anim name="singRIGHT" anim="Tails Sing Note RIGHT" x="-40" y="-59"/>
+	<anim name="idle" anim="Tails idle dance" x="-51" y="-20"/>
+</character>

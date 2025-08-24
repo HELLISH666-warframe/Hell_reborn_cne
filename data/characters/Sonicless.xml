@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Sonicless" icon="sonicless" color="#00547f" x="220" camx="-190" camy="-120" holdTime="6.1" scale="1.4">
+	<anim name="singDOWN" anim="down" x="182.14285714285717" y="-7.857142857142858"/>
+	<anim name="idle" anim="Idle Sonic" x="177.14285714285717" y="-36.42857142857143"/>
+	<anim name="singLEFT" anim="Sonk left real" x="283.5714285714286" y="7.142857142857143"/>
+	<anim name="singUP" anim="sonk up real" x="329.28571428571433" y="15.000000000000002"/>
+	<anim name="singRIGHT" anim="sonk right real" x="175" y="28.571428571428573"/>
+</character>

@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Xeno Advanced" icon="advanced" color="#0040e8" x="980" y="230" antialiasing="false" camx="-270" camy="-10" holdTime="6.1" scale="0.8">
+	<anim name="singDOWN" anim="Down" x="393.75" y="223.75"/>
+	<anim name="idle" anim="Idle" x="347.5" y="223.75" fps="14"/>
+	<anim name="singLEFT" anim="Left" x="420" y="225" fps="15"/>
+	<anim name="singRIGHT" anim="Right" x="330" y="223.75" fps="14"/>
+	<anim name="singUP" anim="Up" x="376.25" y="221.25" fps="14"/>
+</character>

@@ -1,0 +1,7 @@
+<!DOCTYPE codename-engine-week>
+<week name="null" chars="" sprite="tutorial">
+	<song>too-slow</song>
+	<song>you-cant-run</song>
+	<song>triple-trouble</song>
+	<difficulty name="hard"/>
+</week>

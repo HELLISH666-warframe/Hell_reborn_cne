@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Lord X Cycles" icon="cyclesx" color="#706e98" x="-80" y="460" camx="-210" camy="-170" scale="0.80000000000002">
+	<anim name="singUP" anim="Up" x="366.24999999999085" y="784.9999999999803" fps="28"/>
+	<anim name="singDOWN" anim="Down0" x="488.7499999999878" y="429.99999999998926"/>
+	<anim name="idle" anim="Idle" x="506.2499999999873" y="548.7499999999862" fps="20"/>
+	<anim name="singLEFT" anim="Left" x="729.9999999999817" y="492.49999999998766"/>
+	<anim name="singRIGHT" anim="Right" x="374.9999999999906" y="562.4999999999859"/>
+</character>

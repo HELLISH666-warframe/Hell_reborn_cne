@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Sonix2" icon="sonix" color="#3c3f6b" x="-150" y="-340" camx="-163" camy="450" holdTime="6.1">
+	<anim name="idle" anim="sonix2 idle" x="-2" y="-209" fps="18"/>
+	<anim name="singDOWN" anim="sonix2 down" x="-10" y="-212"/>
+	<anim name="singUP" anim="sonix up2" x="-4" y="-219"/>
+	<anim name="singRIGHT" anim="sonix2 left" x="-1" y="-209"/>
+	<anim name="singLEFT" anim="sonix2 right" x="-3" y="-210"/>
+</character>

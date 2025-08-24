@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="EXEP2" icon="YCR Sonic" color="#000064" x="-660" y="-110" flipX="true" camx="510" camy="180" holdTime="6.1" scale="0.6">
+	<anim name="idle" anim="Idle" x="-661.6666666666667" y="-13.333333333333334"/>
+	<anim name="singUP" anim="Up" x="-563.3333333333334" y="88.33333333333334"/>
+	<anim name="singRIGHT" anim="Left" x="-733.3333333333334" y="61.66666666666667"/>
+	<anim name="singLEFT" anim="Right" x="-276.6666666666667" y="-185"/>
+	<anim name="singDOWN" anim="Left" x="-776.6666666666667" y="48.333333333333336"/>
+</character>

@@ -1,0 +1,7 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="death" icon="bf" color="#31b0d1" x="-720" y="50" flipX="true" camx="110" camy="-90">
+	<anim name="firstDeath" anim="Loorde ex 1" x="257" y="161"/>
+	<anim name="deathConfirm" anim="Loorde ex 1" x="257" y="161"/>
+	<anim name="deathLoop" anim="Loorde ex 2" x="231" y="121" loop="true"/>
+</character>

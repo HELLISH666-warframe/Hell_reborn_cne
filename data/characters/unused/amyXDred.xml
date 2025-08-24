@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="amyXDred" icon="amy" color="#b87373" camx="-220" camy="70" holdTime="6.1" scale="0.8">
+	<anim name="singDOWN" anim="Amy Down" x="487.5" y="202.5"/>
+	<anim name="singLEFT" anim="Amy Left" x="392.5" y="48.75"/>
+	<anim name="singRIGHT" anim="Amy Right" x="412.5" y="208.75"/>
+	<anim name="idle" anim="Amy Idle" x="441.25" y="257.5"/>
+	<anim name="singUP" anim="Amy Up" x="327.5" y="203.75"/>
+</character>

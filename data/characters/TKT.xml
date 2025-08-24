@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="TyrantKnucklesTails" icon="knuckle" color="#cc3333" x="240" y="150" camx="-240" camy="140" holdTime="6.1" scale="1.1">
+	<anim name="idle" anim="Idle" x="393.6363636363636" y="164.54545454545453"/>
+	<anim name="singUP" anim="Up" x="140" y="-75.45454545454545"/>
+	<anim name="singDOWN" anim="Down" x="141.8181818181818" y="-75.45454545454545"/>
+	<anim name="singLEFT" anim="Left" x="149.09090909090907" y="-109.09090909090908"/>
+	<anim name="singRIGHT" anim="Right" x="395.45454545454544" y="167.27272727272725"/>
+</character>

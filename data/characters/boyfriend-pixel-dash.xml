@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Boyfrind-Pixel-Dash" icon="bf-pixel" color="#7bd6f6" x="-950" y="-170" flipX="true" antialiasing="false" camx="4500" camy="-400" scale="0.4">
+	<anim name="idle" anim="Idle" x="1012.5" y="1097.5" fps="14" loop="true"/>
+	<anim name="singDOWN" anim="Down" x="1012.5" y="1097.5" fps="16" loop="true"/>
+	<anim name="singRIGHT" anim="Right" x="1012.5" y="1097.5" fps="14" loop="true"/>
+	<anim name="singUP" anim="Up" x="1012.5" y="1097.5" fps="14" loop="true"/>
+	<anim name="singLEFT" anim="Left" x="1012.5" y="1097.5" fps="16" loop="true"/>
+</character>

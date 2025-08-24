@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Manic X" icon="x" color="#505f83" y="350" camx="-390" camy="-240">
+	<anim name="singLEFT" anim="Maniac X Left" x="284" y="374"/>
+	<anim name="singDOWN" anim="Maniac X Down" x="361" y="384"/>
+	<anim name="singUP" anim="Maniac X Up" x="303" y="368"/>
+	<anim name="singRIGHT" anim="Maniac X Right" x="330" y="370"/>
+	<anim name="idle" anim="Maniac X Idle" x="335" y="359" fps="12" loop="true"/>
+</character>

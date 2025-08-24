@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="fake sonic" icon="faker" color="#33438b" x="-110" y="180" camx="122" camy="140" scale="0.8">
+	<anim name="idle" anim="Idle"/>
+	<anim name="singUP" anim="Up" x="81.25" y="71.25"/>
+	<anim name="singRIGHT" anim="Right" x="25" y="1.25"/>
+	<anim name="singLEFT" anim="Left" x="196.25" y="17.5"/>
+	<anim name="singDOWN" anim="Down" x="-41.25" y="-63.75"/>
+	<anim name="singUP-alt" anim="Laugh" x="25" y="23.75"/>
+</character>

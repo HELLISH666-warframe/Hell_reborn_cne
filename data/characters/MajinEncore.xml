@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="MajinEncore" icon="face" color="#a1a1a1" x="-1110" y="-360" flipX="true" camx="620" camy="330" holdTime="6.1" scale="0.6">
+	<anim name="idle" anim="Idle"/>
+	<anim name="singLEFT" anim="Right"/>
+	<anim name="singDOWN" anim="Down"/>
+	<anim name="singRIGHT" anim="Left"/>
+	<anim name="singUP" anim="Up"/>
+</character>

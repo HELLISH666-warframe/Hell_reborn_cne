@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character x="-230" y="-290" sprite="Knucklesc Purple" scale="0.5" camx="-340" camy="500" isPlayer="true" icon="knuckle" color="#CC331F" holdTime="6.1">
+	<anim name="idle" anim="Idle" x="-254" y="-218" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="Down" x="-376" y="-208" fps="24" loop="false"/>
+	<anim name="singUP" anim="Up" x="-136" y="-56" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="Right" x="-52" y="-242" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="Left" x="-80" y="-106" fps="24" loop="false"/>
+</character>

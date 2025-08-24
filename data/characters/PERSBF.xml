@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Pers BF" icon="bf" color="#00a8ff" x="550" y="860" flipX="true" camx="-550" camy="-410" scale="1.1">
+	<anim name="idle" anim="BF idle dance" x="368.18181818181813" y="399.09090909090907" fps="28"/>
+	<anim name="singLEFT" anim="BF NOTE RIGHT0" x="413.6363636363636" y="394.5454545454545" fps="28"/>
+	<anim name="singDOWN" anim="BF NOTE DOWN0" x="347.27272727272725" y="351.8181818181818"/>
+	<anim name="singUP" anim="BF NOTE UP0" x="375.45454545454544" y="434.5454545454545" fps="28"/>
+	<anim name="singRIGHT" anim="BF NOTE LEFT0" x="327.27272727272725" y="390.9090909090909" fps="28"/>
+</character>

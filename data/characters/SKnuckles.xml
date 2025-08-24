@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="SKnuckles" icon="knuckle" color="#cc3333" x="-1000" y="130" flipX="true" camx="-620" camy="160" scale="0.7">
+	<anim name="idle" anim="Idle" x="-78.57142857142857" y="98.57142857142858" fps="28"/>
+	<anim name="singDOWN" anim="Down" x="-84.28571428571429" y="81.42857142857143"/>
+	<anim name="singUP" anim="Up" x="-87.14285714285715" y="168.57142857142858" fps="28"/>
+	<anim name="singRIGHT" anim="Right" x="-87.14285714285715" y="114.28571428571429" fps="28"/>
+	<anim name="singLEFT" anim="Left" x="-78.57142857142857" y="120.00000000000001" fps="28"/>
+</character>

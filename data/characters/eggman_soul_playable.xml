@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="eggman_soul" icon="eggy" color="#290b1f" y="100" camx="120" camy="60" holdTime="6.1">
+	<anim name="singUP" anim="Up" x="-248" y="203"/>
+	<anim name="singDOWN" anim="Down" x="140" y="-70"/>
+	<anim name="singRIGHT" anim="Left" x="-180" y="-173"/>
+	<anim name="singLEFT" anim="Right" x="174" y="-141"/>
+	<anim name="idle" anim="Idle" x="-147" y="31" loop="true"/>
+</character>

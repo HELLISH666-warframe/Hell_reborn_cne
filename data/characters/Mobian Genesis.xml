@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Genesis Mobian" icon="MobianP" color="#0040e8" x="-1500" y="330" flipX="true" antialiasing="false" camx="30" camy="-70" holdTime="6.1" scale="0.7">
+	<anim name="idle" anim="Idle" x="352.8571428571429" y="340"/>
+	<anim name="singDOWN" anim="Down" x="352.8571428571429" y="340"/>
+	<anim name="singUP" anim="Up" x="352.8571428571429" y="340"/>
+	<anim name="singRIGHT" anim="Right" x="352.8571428571429" y="340"/>
+	<anim name="singLEFT" anim="Left" x="352.8571428571429" y="340"/>
+</character>

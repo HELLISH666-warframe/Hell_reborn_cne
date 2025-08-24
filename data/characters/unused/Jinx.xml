@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Jinx" icon="jinx" color="#ceffff" x="200" y="450" camx="-310" camy="-300" scale="0.8">
+	<anim name="singDOWN" anim="Down" x="495" y="555"/>
+	<anim name="singUP" anim="Up" x="428.75" y="635" fps="28"/>
+	<anim name="idle" anim="Idle" x="506.25" y="548.75" fps="28" loop="true"/>
+	<anim name="singLEFT" anim="Left" x="703.75" y="537.5" fps="28"/>
+	<anim name="singRIGHT" anim="Right" x="335" y="575" fps="28"/>
+</character>

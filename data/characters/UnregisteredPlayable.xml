@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Unregistered" icon="unregistered" color="#ffffeb" x="410" y="710" camx="610" camy="-450">
+	<anim name="" anim="" x="500" y="460"/>
+	<anim name="singDOWN" anim="Down" x="571" y="474"/>
+	<anim name="idle" anim="Idle" x="405" y="439" fps="28"/>
+	<anim name="singUP" anim="Up" x="413" y="558" fps="28"/>
+	<anim name="singRIGHT" anim="Left" x="330" y="390" fps="28"/>
+	<anim name="singLEFT" anim="Right" x="564" y="434" fps="28"/>
+</character>

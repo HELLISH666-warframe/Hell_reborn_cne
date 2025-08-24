@@ -1,0 +1,6 @@
+<!DOCTYPE codename-engine-week>
+<week name="weekchemical" chars="" sprite="tutorial">
+	<song>synthesized</song>
+	<difficulty name="hard"/>
+	<difficulty name="encore"/>
+</week>

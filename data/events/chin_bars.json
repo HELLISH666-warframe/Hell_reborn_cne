@@ -1,0 +1,13 @@
+{
+	"params": [
+		{
+			"name": "StartStop",
+			"type": "Bool",
+			"defaultValue": true
+		}, {
+			"name": "Speed",
+			"type": "String",
+			"defaultValue": "1"
+		}
+	]
+}

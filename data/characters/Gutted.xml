@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Gutted" icon="gutted" color="#dbc6c6" antialiasing="false" camx="-220" camy="60" holdTime="6.1" scale="0.7">
+	<anim name="idle" anim="idle" x="397.14285714285717" y="255.71428571428572"/>
+	<anim name="singLEFT" anim="left" x="437.14285714285717" y="257.14285714285717"/>
+	<anim name="singDOWN" anim="down" x="421.42857142857144" y="255.71428571428572"/>
+	<anim name="singUP" anim="up" x="487.14285714285717" y="287.14285714285717"/>
+	<anim name="singRIGHT" anim="right" x="421.42857142857144" y="300"/>
+</character>

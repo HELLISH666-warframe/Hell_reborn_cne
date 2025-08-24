@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Not-Sonic" icon="notsonic2" color="#007fff" camx="-620" camy="90" holdTime="6.1" scale="1.2">
+	<anim name="idle" anim="Spoingus Idle" x="391.6666666666667" y="-92.5"/>
+	<anim name="singUP" anim="Spoingus Up" x="-46.66666666666667" y="-308.33333333333337"/>
+	<anim name="singLEFT" anim="Spoingus Left" x="384.1666666666667" y="-92.5"/>
+	<anim name="singRIGHT" anim="Spoingus Right" x="50" y="-369.1666666666667"/>
+	<anim name="singDOWN" anim="Spoingus Down" x="391.6666666666667" y="-91.66666666666667"/>
+</character>

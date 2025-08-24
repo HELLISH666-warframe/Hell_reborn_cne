@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Enlait" icon="xain" color="#485e84" x="390" y="250" flipX="true" camx="200" camy="-30" holdTime="6.1" scale="0.7">
+	<anim name="idle" anim="Idle" x="341.42857142857144" y="331.42857142857144"/>
+	<anim name="singDOWN" anim="Down" x="330" y="327.14285714285717"/>
+	<anim name="singUP" anim="Up" x="312.8571428571429" y="415.7142857142857"/>
+	<anim name="Kill" anim="Reveal" x="341.42857142857144" y="330" fps="8"/>
+	<anim name="singLEFT" anim="Left" x="427.14285714285717" y="312.8571428571429"/>
+	<anim name="singRIGHT" anim="Right" x="300" y="307.14285714285717"/>
+</character>

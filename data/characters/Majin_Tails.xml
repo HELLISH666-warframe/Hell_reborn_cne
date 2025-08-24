@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="MT" icon="Majintails" color="#cc640e" camx="-200" camy="-30" holdTime="6.1" scale="1.7">
+	<anim name="idle" anim="Idle" x="60.58823529411765" y="-23.529411764705884"/>
+	<anim name="singUP" anim="Up" x="71.76470588235294" y="-22.35294117647059"/>
+	<anim name="singLEFT" anim="Left" x="61.1764705882353" y="-24.11764705882353"/>
+	<anim name="singRIGHT" anim="Right" x="70.58823529411765" y="-25.294117647058822"/>
+	<anim name="singDOWN" anim="Down" x="17.058823529411764" y="-17.647058823529413" loop="true"/>
+</character>

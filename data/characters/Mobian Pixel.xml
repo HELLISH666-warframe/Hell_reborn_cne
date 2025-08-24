@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Mobian Pixel" icon="MobianP" color="#0040e8" x="-1500" y="330" flipX="true" antialiasing="false" camx="-190" camy="10" holdTime="6.1" scale="0.7">
+	<anim name="idle" anim="Idle" x="352.8571428571429" y="340"/>
+	<anim name="singDOWN" anim="Down" x="364.28571428571433" y="340"/>
+	<anim name="singUP" anim="Up" x="355.7142857142857" y="341.42857142857144"/>
+	<anim name="singRIGHT" anim="Right" x="352.8571428571429" y="340"/>
+	<anim name="singLEFT" anim="Left" x="352.8571428571429" y="340"/>
+</character>

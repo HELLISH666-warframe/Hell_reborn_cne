@@ -1,0 +1,13 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Placeholder Sprites/YCR_Mad" icon="ycr-pissy" color="#160d87" x="-150" y="180" camx="-80" camy="90" holdTime="6.1">
+	<anim name="laugh" anim="laugh_Instance" x="18" y="-35" indices="1..6"/>
+	<anim name="scream" anim="scream" x="360" y="7"/>
+	<anim name="singDOWN-alt" anim="laugh" x="18" y="-35"/>
+	<anim name="singLEFT" anim="mad_left" x="192" y="32" fps="38"/>
+	<anim name="singUP" anim="mad_up" x="-61" y="238" fps="42"/>
+	<anim name="singDOWN" anim="mad_down" x="-20" y="-26" fps="40"/>
+	<anim name="singRIGHT" anim="mad_right" x="-26" y="0" fps="35"/>
+	<anim name="idle" anim="mad_idle" x="-18" y="67" fps="26" loop="true"/>
+	<anim name="die" anim="just_die" x="170" y="20"/>
+</character>

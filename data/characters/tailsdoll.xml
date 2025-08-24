@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Tails_Doll" icon="taildoll" color="#f39b00" x="-360" y="-460" camx="180" camy="260" scale="0.95">
+	<anim name="" anim=""/>
+	<anim name="idle" anim="Idle" x="-77.89473684210526" y="-52.631578947368425" loop="true"/>
+	<anim name="singUP" anim="Up" x="-68.42105263157895" y="123.15789473684211"/>
+	<anim name="singRIGHT" anim="Right" x="-202.10526315789474" y="-36.8421052631579"/>
+	<anim name="singLEFT" anim="Left" x="34.73684210526316" y="-42.10526315789474"/>
+	<anim name="singDOWN" anim="Down" x="-108.42105263157896" y="-211.57894736842107"/>
+</character>

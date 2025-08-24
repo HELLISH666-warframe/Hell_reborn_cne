@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Stails" icon="T" color="#0b0b0b" x="770" y="-10" camx="-510" camy="250" holdTime="6.1" scale="0.7">
+	<anim name="idle" anim="TIdle" x="375.7142857142857" y="-98.57142857142858"/>
+	<anim name="singLEFT" anim="TLeft" x="357.14285714285717" y="-51.42857142857143"/>
+	<anim name="singRIGHT" anim="TRight" x="350" y="-100"/>
+	<anim name="singUP" anim="TUp" x="348.5714285714286" y="-81.42857142857143"/>
+	<anim name="singDOWN" anim="TDown" x="341.42857142857144" y="-98.57142857142858"/>
+</character>

@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="ycrXenoTest" icon="ycr" color="#160d87" x="-230" y="30" camx="50" camy="-70" holdTime="6.1">
+	<anim name="idle" anim="IdleXenobb" x="-18" y="67" loop="true"/>
+	<anim name="singUP" anim="up" x="-109" y="69" fps="42"/>
+	<anim name="singLEFT" anim="left" x="264" y="21" fps="38"/>
+	<anim name="singRIGHT" anim="right" x="-216" y="-111" fps="35"/>
+	<anim name="singDOWN" anim="down" x="-59" y="-56" fps="40"/>
+</character>

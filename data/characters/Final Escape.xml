@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Exe begin" icon="gf" color="#000000" y="-70" camx="-130" camy="330" holdTime="6.1" scale="2.05">
+	<anim name="singLEFT" anim="Tails Soul Left" x="121.95121951219514" y="-640"/>
+	<anim name="singRIGHT" anim="Tails Soul Right" x="122.43902439024392" y="730.7317073170732"/>
+	<anim name="singDOWN" anim="Tails Soul Down" x="107.31707317073172" y="727.3170731707318"/>
+	<anim name="singUP" anim="Tails Soul Up" x="103.41463414634147" y="-652.6829268292684"/>
+	<anim name="idle" anim="Run" x="-135.1219512195122" y="-214.14634146341464" fps="6"/>
+</character>

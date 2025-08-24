@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Hedgehog" icon="hedge" color="#340074" x="360" y="480" antialiasing="false" camx="-360" camy="-340">
+	<anim name="singUP" anim="Up" x="300" y="493"/>
+	<anim name="singDOWN" anim="Down" x="368" y="419"/>
+	<anim name="singRIGHT" anim="Right" x="363" y="453"/>
+	<anim name="singLEFT" anim="Left" x="373" y="489"/>
+	<anim name="idle" anim="Idle" x="408" y="435" fps="30"/>
+</character>

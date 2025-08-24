@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Lourde Echs" icon="loorde" color="#526fa9" x="-30" y="-100" camx="-370" camy="470" holdTime="6.1" scale="0.6">
+	<anim name="singUP" anim="Up" x="853.3333333333334" y="-330"/>
+	<anim name="singDOWN" anim="Down" x="1133.3333333333335" y="-431.6666666666667"/>
+	<anim name="idle" anim="Idle" x="705" y="-431.6666666666667"/>
+	<anim name="singLEFT" anim="Left" x="1221.6666666666667" y="-331.6666666666667"/>
+	<anim name="singRIGHT" anim="Right" x="590" y="-466.6666666666667"/>
+</character>

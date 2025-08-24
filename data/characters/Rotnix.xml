@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Rotnix" icon="xeno1" color="#000064" x="-610" y="-50" camx="290" camy="160" holdTime="6.1">
+	<anim name="singDOWN" anim="Down" x="-127" y="-38"/>
+	<anim name="singUP" anim="Up" x="-127" y="-38"/>
+	<anim name="singLEFT" anim="Left" x="-127" y="-38"/>
+	<anim name="singRIGHT" anim="Right" x="-127" y="-38"/>
+	<anim name="idle" anim="Idle" x="-127" y="-38"/>
+</character>

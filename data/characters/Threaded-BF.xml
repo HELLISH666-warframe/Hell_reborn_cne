@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Threaded-BF" icon="bf" color="#00a8ff" x="340" y="540" flipX="true" camx="570" camy="-500">
+	<anim name="singLEFT" anim="Left" x="465" y="669"/>
+	<anim name="singRIGHT" anim="Right" x="465" y="669"/>
+	<anim name="singUP" anim="Up" x="465" y="669"/>
+	<anim name="singDOWN" anim="Down" x="465" y="669"/>
+	<anim name="idle" anim="Idle" x="465" y="669" fps="40"/>
+	<anim name="dodge" anim="Down" x="465" y="669"/>
+</character>

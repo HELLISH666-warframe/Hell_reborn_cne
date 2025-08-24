@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Faker_EXE_Assets" icon="faker" color="#242490" x="-210" y="-80" camx="122" camy="140" scale="0.7">
+	<anim name="idle" anim="Idle"/>
+	<anim name="singUP" anim="Up" x="100" y="-14.285714285714286"/>
+	<anim name="singRIGHT" anim="Right" x="-80" y="-82.85714285714286"/>
+	<anim name="singLEFT" anim="Left" x="138.57142857142858" y="-30.000000000000004"/>
+	<anim name="singDOWN" anim="Down" x="-118.57142857142858" y="-38.57142857142858"/>
+</character>

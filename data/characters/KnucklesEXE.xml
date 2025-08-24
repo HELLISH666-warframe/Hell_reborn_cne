@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="KnucklesEXE" icon="knux" color="#5e0000" camx="60" camy="220" holdTime="6.1" scale="1.1">
+	<anim name="idle" anim="Idle" x="-142.72727272727272" y="-89.99999999999999"/>
+	<anim name="singDOWN" anim="Down" x="-136.36363636363635" y="-181.8181818181818"/>
+	<anim name="singUP" anim="Up" x="-98.18181818181817" y="-70.9090909090909"/>
+	<anim name="singLEFT" anim="Right" x="140" y="-173.63636363636363"/>
+	<anim name="singRIGHT" anim="Left" x="-136.36363636363635" y="-139.0909090909091"/>
+</character>

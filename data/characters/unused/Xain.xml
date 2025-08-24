@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Xain" icon="Xain" color="#0050ff" y="180" camx="60" camy="120" holdTime="6.1" scale="0.8">
+	<anim name="Symbol" anim="Symbol" x="0" y="50"/>
+	<anim name="singLEFT" anim="Left" x="102.5" y="-27.5"/>
+	<anim name="singUP" anim="Up" x="142.5" y="0"/>
+	<anim name="singRIGHT" anim="Right" x="125" y="-36.25"/>
+	<anim name="singDOWN" anim="Down" x="13.75" y="-70"/>
+	<anim name="idle" anim="Idle" x="36.25" y="-23.75"/>
+</character>

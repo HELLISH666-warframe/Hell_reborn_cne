@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="XenoPhase2" icon="xeno1" color="#000060" x="-70" y="10" camx="90" camy="-30" holdTime="6.1" scale="1.1">
+	<anim name="idle" anim="Idle" x="-163.63636363636363" y="-17.27272727272727"/>
+	<anim name="singLEFT" anim="Left" x="-3.6363636363636362" y="-18.18181818181818"/>
+	<anim name="singDOWN" anim="Down" x="-219.09090909090907" y="-100.9090909090909"/>
+	<anim name="singUP" anim="Up" x="-102.72727272727272" y="160"/>
+	<anim name="singRIGHT" anim="Right" x="-9.09090909090909" y="79.09090909090908"/>
+</character>

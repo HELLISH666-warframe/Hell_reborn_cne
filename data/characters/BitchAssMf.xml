@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Bitch Hoe" icon="bitch" color="#22b14c" x="360" y="610" camx="-510" camy="-340">
+	<anim name="" anim="" x="350" y="490"/>
+	<anim name="singLEFT" anim="Bitch Left" x="524" y="564" fps="28"/>
+	<anim name="singRIGHT" anim="Bitch Right" x="840" y="560" fps="28"/>
+	<anim name="singDOWN" anim="Bitch Up" x="711" y="664"/>
+	<anim name="singUP" anim="Bitch Down" x="723" y="538" fps="28"/>
+	<anim name="idle" anim="Bitch Idle" x="705" y="549" fps="28" loop="true"/>
+</character>

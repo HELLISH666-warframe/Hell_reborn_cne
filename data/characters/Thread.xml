@@ -1,0 +1,7 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Threaded Die" icon="bf" color="#00a8ff" x="340" y="540" flipX="true" camx="570" camy="-500">
+	<anim name="firstDeath" anim="Death " x="440" y="670" fps="40"/>
+	<anim name="deathLoop" anim="loop" x="440" y="670"/>
+	<anim name="deathConfirm" anim="loop" x="440" y="670"/>
+</character>

@@ -1,0 +1,5 @@
+<!DOCTYPE codename-engine-week>
+<week name="weekhunger" chars="" sprite="tutorial">
+	<song>power-hungry</song>
+	<difficulty name="hard"/>
+</week>

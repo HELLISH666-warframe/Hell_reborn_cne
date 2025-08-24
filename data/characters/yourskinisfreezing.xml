@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="BITCH_BOY" icon="bitchboy" color="#ffffff" y="120" flipX="true" camx="-240" camy="315">
+	<anim name="idle" anim="BF idle dance" x="-270" y="-269" loop="true"/>
+	<anim name="singDOWN" anim="BF NOTE DOWN" x="-291" y="-321" loop="true"/>
+	<anim name="singUP" anim="BF NOTE UP" x="-283" y="-228" loop="true"/>
+	<anim name="singRIGHT" anim="BF NOTE RIGHT" x="-279" y="-160" loop="true"/>
+	<anim name="singLEFT" anim="BF NOTE LEFT" x="-130" y="-149" loop="true"/>
+</character>

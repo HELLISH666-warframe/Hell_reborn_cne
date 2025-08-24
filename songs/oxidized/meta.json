@@ -1,0 +1,9 @@
+{
+	"displayName": "oxidized",
+	"bpm": 150.0,
+	"icon": "metal",
+	"difficulties": [
+		"HARD"
+	],
+	"color": "#9271FD"
+}

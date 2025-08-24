@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Xeno Assets" icon="Beast" color="#2a0576" x="-400" y="-130" camx="210" camy="-10" holdTime="6.1">
+	<anim name="singLEFT" anim="xeno left" x="-145" y="-40"/>
+	<anim name="idle" anim="xeno idle" x="-180" y="-19" fps="18"/>
+	<anim name="singRIGHT" anim="xeno right" x="-90" y="-33" fps="18"/>
+	<anim name="singDOWN" anim="xeno down" x="-259" y="-41" fps="18"/>
+	<anim name="singUP" anim="xeno up" x="-103" y="-14" fps="14"/>
+</character>

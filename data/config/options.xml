@@ -1,0 +1,4 @@
+<!DOCTYPE codename-mod-options>
+<menu name="ron Options" desc="shader_shit">
+    <checkbox id="hud_side" name="Enable_for_right" desc="side_that_thy_hud_is_on" />
+</menu>

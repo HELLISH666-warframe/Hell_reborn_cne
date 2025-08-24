@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Enlait Encore" icon="xain" color="#485e84" x="-200" y="270" flipX="true" camx="30" camy="-200" holdTime="6.1" scale="0.9">
+	<anim name="singDOWN" anim="Down" x="-21.11111111111111" y="267.77777777777777" fps="18"/>
+	<anim name="singRIGHT" anim="Left" x="-3.333333333333333" y="264.44444444444446" fps="18"/>
+	<anim name="singLEFT" anim="Right" x="200" y="272.22222222222223" fps="18"/>
+	<anim name="singUP" anim="Up" x="208.88888888888889" y="347.77777777777777" fps="18" indices="0..8"/>
+	<anim name="idle" anim="Idle" x="-14.444444444444445" y="264.44444444444446"/>
+</character>

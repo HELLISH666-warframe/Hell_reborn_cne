@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Faix" icon="extraz" color="#3434ac" x="760" y="450" camx="-1030" camy="-250" holdTime="6.1" scale="1.1">
+	<anim name="idle" anim="Idle" x="589.090909090909" y="436.3636363636363"/>
+	<anim name="singDOWN" anim="Down" x="587.2727272727273" y="437.27272727272725"/>
+	<anim name="singRIGHT" anim="Right" x="588.1818181818181" y="437.27272727272725"/>
+	<anim name="singLEFT" anim="Left" x="590" y="437.27272727272725"/>
+	<anim name="singUP" anim="Up" x="589.090909090909" y="435.45454545454544" loop="true"/>
+</character>

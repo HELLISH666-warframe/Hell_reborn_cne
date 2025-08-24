@@ -1,0 +1,7 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="EnlaitDeath" icon="bf" color="#00a8ff" x="2020" y="1070" flipX="true" camx="1670" camy="-940" scale="0.8">
+	<anim name="firstDeath" anim="FirstDie" x="282.5" y="75"/>
+	<anim name="deathConfirm" anim="DieConfirm" x="291.25" y="77.5"/>
+	<anim name="deathLoop" anim="DieWait" x="331.25" y="82.5" loop="true"/>
+</character>

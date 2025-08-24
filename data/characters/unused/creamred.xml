@@ -1,0 +1,13 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="creamred" icon="cream" color="#604860" camx="140" camy="280" holdTime="6.1">
+	<anim name="idle-loop" anim="Dad idle dance" x="12" y="-6" loop="true" indices="10..12,12"/>
+	<anim name="singLEFT-loop" anim="Dad Sing Note LEFT" x="-9" y="10" loop="true" indices="12..15"/>
+	<anim name="singRIGHT-loop" anim="Dad Sing Note RIGHT" x="0" y="27" loop="true" indices="15..18"/>
+	<anim name="singUP-loop" anim="Dad Sing Note UP" x="-6" y="50" loop="true" indices="56..59"/>
+	<anim name="singDOWN" anim="Cream DOWN" x="10" y="-338"/>
+	<anim name="singLEFT" anim="Cream LEFT" x="4" y="-351"/>
+	<anim name="singRIGHT" anim="Cream RIGHT" x="-10" y="-333"/>
+	<anim name="singUP" anim="Cream UP" x="22" y="-308"/>
+	<anim name="idle" anim="Cream IDLE" x="13" y="-355"/>
+</character>

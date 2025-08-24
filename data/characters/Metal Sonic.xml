@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="MechSonic" icon="metal" color="#2a2a91" x="390" y="460" camx="-410" camy="-290" scale="0.8">
+	<anim name="idle" anim="MechSonic_Idle" x="506.25" y="498.75"/>
+	<anim name="singLEFT" anim="MetalSonic_Left" x="541.25" y="421.25"/>
+	<anim name="singDOWN" anim="MetalSonic_Down" x="490" y="316.25"/>
+	<anim name="singUP" anim="MetalSonic_Up" x="535" y="502.5"/>
+	<anim name="singRIGHT" anim="MechSonic_Right" x="455" y="360"/>
+</character>

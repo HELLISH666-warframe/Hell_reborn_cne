@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="XenoRing" icon="xeno1" color="#000060" y="250" camx="80" holdTime="6.1" scale="0.8">
+	<anim name="idle" anim="XenoRing_Idle" x="423.75" y="388.75"/>
+	<anim name="singLEFT" anim="XenoRing_Left" x="423.75" y="388.75"/>
+	<anim name="singDOWN" anim="XenoRing_Down" x="425" y="388.75"/>
+	<anim name="singRIGHT" anim="XenoRing_Right" x="423.75" y="388.75"/>
+	<anim name="singUP" anim="XenoRing_Up" x="423.75" y="405"/>
+</character>

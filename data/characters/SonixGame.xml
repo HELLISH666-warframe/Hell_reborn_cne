@@ -1,0 +1,7 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Sonix gameover" icon="bf" color="#31b0d1" x="1690" y="1410" flipX="true" camx="-2170" camy="-1400">
+	<anim name="firstDeath" anim="Sonix enter" x="17" y="191" fps="10"/>
+	<anim name="deathLoop" anim="Sonix stay" x="17" y="191" fps="8" loop="true"/>
+	<anim name="deathConfirm" anim="Sonix stay" x="17" y="191" fps="8"/>
+</character>

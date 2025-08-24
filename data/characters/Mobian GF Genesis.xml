@@ -1,0 +1,6 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Mobian GF Genesis" icon="gf" color="#a5004d" x="60" y="160" antialiasing="false" camx="-440" camy="-50">
+	<anim name="danceLeft" anim="Idle" x="270" y="170" indices="0..8"/>
+	<anim name="danceRight" anim="Idle" x="270" y="170" indices="9..17"/>
+</character>

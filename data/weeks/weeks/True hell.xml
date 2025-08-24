@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-week>
+<week name="True hell" chars="" sprite="tutorial">
+	<song>torture</song>
+	<song>persistence</song>
+	<song>revenge</song>
+	<difficulty name="hard"/>
+	<difficulty name="encore"/>
+	<difficulty name="legacy"/>
+</week>

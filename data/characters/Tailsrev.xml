@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Tails" icon="tails" color="#666666" flipX="true" camx="50" camy="450" holdTime="6.1">
+	<anim name="idle" anim="Tails ID" x="-87" y="-379"/>
+	<anim name="singLEFT" anim="Tails LEFT" x="-26" y="-391"/>
+	<anim name="singRIGHT" anim="Tails RIGHT" x="-90" y="-393"/>
+	<anim name="singDOWN" anim="Tails DOWN" x="-70" y="-420"/>
+	<anim name="singUP" anim="Tails UP" x="-78" y="-328"/>
+</character>

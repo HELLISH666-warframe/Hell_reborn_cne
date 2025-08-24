@@ -1,0 +1,12 @@
+<!DOCTYPE codename-engine-character>
+<character y="270" sprite="ENCORE_BF" flipX="true" icon="bf" camx="-300"  color="#31B0D1">
+	<anim name="singLEFT" anim="right instance" x="-260" y="-2" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="down instance" x="-357" y="-56" fps="24" loop="false"/>
+	<anim name="idle" anim="idle instance" x="-5" y="0" fps="24" loop="false"/>
+	<anim name="singDOWNmiss" anim="miss DOWN instance" x="-357" y="-53" fps="24" loop="false"/>
+	<anim name="singLEFTmiss" anim="miss LEFT instance" x="107" y="-1" fps="24" loop="false"/>
+	<anim name="singRIGHTmiss" anim="miss RIGHT instance" x="-24" y="-24" fps="24" loop="false"/>
+	<anim name="singUPmiss" anim="miss UP instance" x="-36" y="27" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="Left instance" x="-328" y="-27" fps="24" loop="false"/>
+	<anim name="singUP" anim="up instance" x="-270" y="37" fps="24" loop="false"/>
+</character>

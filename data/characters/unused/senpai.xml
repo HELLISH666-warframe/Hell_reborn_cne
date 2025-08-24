@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="senpai" icon="senpai-pixel" color="#ffaa6f" x="150" y="150" antialiasing="false" camx="330" camy="-330" scale="6">
+	<anim name="idle" anim="Senpai Idle" x="0.16666666666666666" y="0"/>
+	<anim name="singUP" anim="SENPAI UP NOTE" x="0.8333333333333334" y="6.166666666666667"/>
+	<anim name="singRIGHT" anim="SENPAI RIGHT NOTE"/>
+	<anim name="singLEFT" anim="SENPAI LEFT NOTE" x="6.666666666666667" y="0"/>
+	<anim name="singDOWN" anim="SENPAI DOWN NOTE" x="2.3333333333333335" y="0"/>
+</character>

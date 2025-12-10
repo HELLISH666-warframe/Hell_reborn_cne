@@ -1,0 +1,15 @@
+{
+	"color": "#FF00FF",
+	"customValues": {},
+	"opponentModeAllowed": true,
+	"difficulties": [
+		"hard"
+	],
+	"icon": "cream",
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "Horizon",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"bpm": 165
+}

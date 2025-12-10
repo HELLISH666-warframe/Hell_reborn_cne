@@ -112,7 +112,7 @@ var parentDisabler:FunkinParentDisabler;
         leTime = curTime;
         var secondsTotal:Int = Math.floor(curTime / 1000);
         if (secondsTotal < 0) secondsTotal = 0;
-        timeTxt = new FlxText(-195, 290, 0, 'Time:        '+FlxStringUtil.formatTime(secondsTotal, false)+'/'+FlxStringUtil.formatTime(PlayState.instance.songLength/1000), 40);
+        timeTxt = new FlxText(-195, 290, 0, 'Time:        '+FlxStringUtil.formatTime(secondsTotal, false)+'/'+FlxStringUtil.formatTime(FlxG.sound.music.length/1000), 40);
         timeTxt.scrollFactor.set(0, 0);
         timeTxt.angle = -3;
         timeTxt.font = Paths.font('Futura.otf');
@@ -189,7 +189,7 @@ var parentDisabler:FunkinParentDisabler;
                         add(thething);
                         thething.scrollFactor.set(0, 0);
                         add(topSprite);
-                        missCountTxt = new FlxText(50, 240, 0, 'Misses:    '+PlayState.instance.songMisses, 40);
+                        missCountTxt = new FlxText(50, 240, 0, 'Misses:    '+PlayState.instance.misses, 40);
                         missCountTxt.scrollFactor.set(0, 0);
                         missCountTxt.angle = -3;
                         missCountTxt.font = Paths.font('Futura.otf');
@@ -226,36 +226,8 @@ var parentDisabler:FunkinParentDisabler;
             if (FlxG.keys.justPressed.ESCAPE)
                 skippingTime = false;
 
-            
-            if (skippingTime){
-                timeTxt.color = 0xFFac0001;
-                if (controls.RIGHT_P && leTime <= FlxG.sound.music.length){
-                    leTime += 1000;
-                    holdTime = 0;
-                }
-                if (controls.LEFT_P){
-                    if (curTime <= leTime-1000)
-                        leTime -= 1000;
-                    holdTime = 0;
-                }
-                if ((controls.RIGHT && curTime <= FlxG.sound.music.length) || controls.LEFT){
-                    holdTime += elapsed;
-                    if(holdTime > 0.5)
-                    {
-                        var posi:Int = ((controls.LEFT && (curTime <= leTime-1000)) ? -1 : 0);
-                        leTime += 45000 * elapsed * (controls.RIGHT ? 1 : posi);
-                    }
-                }
-                timeTxt.text = 'Time:        '+FlxStringUtil.formatTime((leTime/1000), false)+'/'+FlxStringUtil.formatTime(PlayState.instance.songLength/1000);
-                if (FlxG.keys.justPressed.ENTER){
-                    //PlayState.instance.clearNotesBefore(leTime);
-                    PlayState.instance.setSongTime(leTime);
-                    close();
-                }
-            }else{
                 timeTxt.color = 0xFF19181a;
-                timeTxt.text = 'Time:        '+FlxStringUtil.formatTime((curTime/1000), false)+'/'+FlxStringUtil.formatTime(PlayState.instance.songLength/1000);
-            }
+                timeTxt.text = 'Time:        '+FlxStringUtil.formatTime((curTime/1000), false)+'/'+FlxStringUtil.formatTime(FlxG.sound.music.length/1000);
             
             if (FlxG.keys.justPressed.ENTER && !skippingTime){
                 if (selectedStuffArr[curSelected] != 'Continue') FlxG.sound.play(Paths.sound('selectPause'), 0.8);

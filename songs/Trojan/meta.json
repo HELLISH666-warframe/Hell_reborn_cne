@@ -1,6 +1,17 @@
 {
-	"displayName": "Trojan",
-	"bpm": 120.0,
+	"customValues": {},
+	"color": "#7C85FD",
+	"opponentModeAllowed": true,
 	"icon": "sonix",
-	"color": "#7E71FD"
+	"difficulties": [
+		"hard",
+		"encore",
+		"legacy"
+	],
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "Trojan",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 120
 }

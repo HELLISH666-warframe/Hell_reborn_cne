@@ -1,6 +1,6 @@
 <!DOCTYPE codename-engine-character>
 <!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
-<character sprite="Erinaceus Run" icon="hedge" color="#340074" x="170" y="-520" antialiasing="false" camx="30" camy="-20" holdTime="6.1" scale="0.5">
+<character sprite="Erinaceus Run" icon="hedge" color="#340074" x="170" y="-520" antialiasing="false" camx="30" camy="130" holdTime="6.1" scale="0.5">
 	<anim name="idle" anim="Idle" x="482" y="470" loop="true"/>
 	<anim name="singDOWN" anim="Down" x="480" y="468" loop="true"/>
 	<anim name="singUP" anim="Up" x="472" y="466" loop="true"/>

@@ -1,6 +1,15 @@
 {
-	"displayName": "Futile-Resistance",
-	"bpm": 170.0,
+	"customValues": {},
+	"color": "#9271FD",
+	"opponentModeAllowed": true,
 	"icon": "eggman",
-	"color": "#9271FD"
+	"difficulties": [
+		"hard"
+	],
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "Futile-Resistance",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 170
 }

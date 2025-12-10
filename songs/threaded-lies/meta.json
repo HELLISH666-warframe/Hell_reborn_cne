@@ -1,0 +1,16 @@
+{
+	"color": "#9271FD",
+	"customValues": {},
+	"opponentModeAllowed": true,
+	"difficulties": [
+		"hard",
+		"encore"
+	],
+	"icon": "taildoll",
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "threaded-lies",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"bpm": 160
+}

@@ -1,6 +1,15 @@
 {
-	"displayName": "broken-cartridge",
-	"bpm": 185.0,
+	"customValues": {},
+	"color": "#181FC1",
+	"opponentModeAllowed": true,
 	"icon": "extraz",
-	"color": "#FF0050"
+	"difficulties": [
+		"hard"
+	],
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "broken-cartridge",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 170
 }

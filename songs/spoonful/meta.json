@@ -1,6 +1,15 @@
 {
-	"displayName": "spoonful",
-	"bpm": 145.0,
+	"customValues": {},
+	"color": "#FF004F",
+	"opponentModeAllowed": true,
 	"icon": "sunky",
-	"color": "#FF0050"
+	"difficulties": [
+		"hard"
+	],
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "spoonful",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 145
 }

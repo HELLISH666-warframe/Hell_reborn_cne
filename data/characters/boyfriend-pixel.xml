@@ -1,6 +1,6 @@
 <!DOCTYPE codename-engine-character>
 <!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
-<character sprite="boyfriend-pixel" icon="bf-pixel" color="#7bd6e2" x="650" y="510" flipX="true" camx="700" camy="-200">
+<character sprite="boyfriend-pixel" icon="bf-pixel" color="#7bd6e2" x="650" y="510" flipX="true" camx="540" camy="-350">
 	<anim name="idle" anim="Idle" x="405" y="439"/>
 	<anim name="singDOWN" anim="Down" x="469" y="390" fps="20"/>
 	<anim name="singRIGHT" anim="Right" x="357" y="423" fps="20"/>

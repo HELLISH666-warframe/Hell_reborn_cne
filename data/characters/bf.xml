@@ -1,13 +1,14 @@
 <!DOCTYPE codename-engine-character>
-<character x="340" y="540" sprite="BOYFRIEND" flipX="true" camx="-250" camy="-340" icon="bf" color="#00A8FF">
-	<anim name="idle" anim="Idle" x="405" y="399" fps="24" loop="false"/>
-	<anim name="singLEFT" anim="Right0" x="526" y="392" fps="24" loop="false"/>
-	<anim name="singDOWN" anim="Down0" x="391" y="354" fps="24" loop="false"/>
-	<anim name="singUP" anim="Up0" x="383" y="428" fps="24" loop="false"/>
-	<anim name="singRIGHT" anim="Left0" x="401" y="380" fps="24" loop="false"/>
-	<anim name="singLEFTmiss" anim="Left Miss" x="430" y="400" fps="24" loop="false"/>
-	<anim name="singDOWNmiss" anim="Down Miss" x="420" y="320" fps="24" loop="false"/>
-	<anim name="singUPmiss" anim="Up Miss" x="450" y="460" fps="24" loop="false"/>
-	<anim name="singRIGHTmiss" anim="Right Miss" x="341" y="381" fps="24" loop="false"/>
-	<anim name="Metal" anim="Speak Bitch" x="400" y="400" fps="30" loop="false"/>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="BOYFRIEND" icon="bf" color="#00a8ff" x="340" y="540" flipX="true" camx="460" camy="-340">
+	<anim name="idle" anim="Idle" x="405" y="399"/>
+	<anim name="singLEFT" anim="Left0" x="466" y="392"/>
+	<anim name="singDOWN" anim="Down0" x="391" y="354"/>
+	<anim name="singUP" anim="Up0" x="383" y="428"/>
+	<anim name="singRIGHT" anim="Right0" x="351" y="380"/>
+	<anim name="singLEFTmiss" anim="Left Miss" x="430" y="400"/>
+	<anim name="singDOWNmiss" anim="Down Miss" x="420" y="320"/>
+	<anim name="singUPmiss" anim="Up Miss" x="450" y="460"/>
+	<anim name="singRIGHTmiss" anim="Right Miss" x="341" y="381"/>
+	<anim name="Metal" anim="Speak Bitch" x="400" y="400" fps="30"/>
 </character>

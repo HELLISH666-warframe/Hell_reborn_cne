@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Majin" icon="Majin Sonic" color="#2a1e6d" camx="-150" camy="100" holdTime="6.1" scale="0.8">
+	<anim name="idle" anim="Idle" x="341.25" y="50"/>
+	<anim name="singUP" anim="Up" x="340" y="52.5"/>
+	<anim name="singDOWN" anim="Down" x="336.25" y="50"/>
+	<anim name="singLEFT" anim="Left" x="317.5" y="48.75"/>
+	<anim name="singRIGHT" anim="Right" x="225" y="58.75"/>
+</character>

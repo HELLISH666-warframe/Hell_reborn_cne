@@ -1,8 +1,9 @@
 <!DOCTYPE codename-engine-character>
-<character x="580" y="730" sprite="Mobian Bf Run" flipX="true" camx="180" camy="-290" isPlayer="true" icon="bf" color="#00A7FF">
-	<anim name="singLEFT" anim="Left0" x="523" y="407" fps="24" loop="false"/>
-	<anim name="singDOWN" anim="Down0" x="405" y="402" fps="24" loop="false"/>
-	<anim name="singUP" anim="Up0" x="411" y="445" fps="24" loop="false"/>
-	<anim name="singRIGHT" anim="Right0" x="522" y="409" fps="24" loop="false"/>
-	<anim name="idle" anim="Idle" x="405" y="399" fps="24" loop="true"/>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="Mobian Bf Run" icon="bf" color="#00a8ff" x="580" y="730" flipX="true" camx="180" camy="-290">
+	<anim name="singLEFT" anim="Left0" x="523" y="407"/>
+	<anim name="singDOWN" anim="Down0" x="405" y="402"/>
+	<anim name="singUP" anim="Up0" x="411" y="445"/>
+	<anim name="singRIGHT" anim="Right0" x="522" y="409"/>
+	<anim name="idle" anim="Idle" x="405" y="399" loop="true"/>
 </character>

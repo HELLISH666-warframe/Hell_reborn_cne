@@ -1,0 +1,16 @@
+{
+	"color": "#9271FD",
+	"customValues": {},
+	"opponentModeAllowed": true,
+	"difficulties": [
+		"hard",
+		"legacy"
+	],
+	"icon": "ycr sonic",
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "mirrored",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"bpm": 175
+}

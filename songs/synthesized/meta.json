@@ -1,6 +1,16 @@
 {
-	"displayName": "synthesized",
-	"bpm": 150.0,
+	"customValues": {},
+	"color": "#9271FD",
+	"opponentModeAllowed": true,
 	"icon": "chem",
-	"color": "#9271FD"
+	"difficulties": [
+		"hard",
+		"encore"
+	],
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "synthesized",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 150
 }

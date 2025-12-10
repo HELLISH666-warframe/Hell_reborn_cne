@@ -1,6 +1,15 @@
 {
-	"displayName": "best-friends-forever",
-	"bpm": 160.0,
+	"opponentModeAllowed": false,
 	"icon": "tailsbff",
-	"color": "#FF0050"
+	"difficulties": [
+		"encore",
+		"hard"
+	],
+	"color": "#FF0050",
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "best-friends-forever-encore",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 165
 }

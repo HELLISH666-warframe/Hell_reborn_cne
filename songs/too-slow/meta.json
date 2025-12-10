@@ -1,6 +1,15 @@
 {
-	"displayName": "too-slow",
-	"bpm": 135.0,
+	"customValues": {},
+	"color": "#9271FD",
+	"opponentModeAllowed": true,
 	"icon": "YCR Sonic",
-	"color": "#FF0050"
+	"difficulties": [
+		"hard"
+	],
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "too-slow",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 135
 }

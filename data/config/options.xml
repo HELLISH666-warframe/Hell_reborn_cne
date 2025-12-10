@@ -1,4 +1,9 @@
 <!DOCTYPE codename-mod-options>
-<menu name="ron Options" desc="shader_shit">
-    <checkbox id="hud_side" name="Enable_for_right" desc="side_that_thy_hud_is_on" />
+<menu name="Hell Reborn Options" desc="Options that aplly to the mod.">
+    <choice id="TimeBar" name="Time Bar" desc="What should the Time Bar display?">
+		<value name="Time Left" value="Time Left"/>
+		<value name="Time Elapsed" value="Time Elapsed"/>
+		<value name="Song Name" value="Song Name"/>
+		<value name="Disabled" value="Disabled"/>
+	</choice>
 </menu>

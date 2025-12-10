@@ -1,6 +1,15 @@
 {
-	"displayName": "Decayed",
-	"bpm": 130.0,
+	"customValues": {},
+	"color": "#9271FD",
+	"opponentModeAllowed": true,
 	"icon": "metal",
-	"color": "#9271FD"
+	"difficulties": [
+		"hard"
+	],
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "Decayed",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 130
 }

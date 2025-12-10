@@ -1,6 +1,15 @@
 {
+	"customValues": {},
+	"color": "#9271FD",
+	"opponentModeAllowed": true,
+	"icon": "tlelswaah",
+	"difficulties": [
+		"hard"
+	],
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
 	"displayName": "maidenless",
-	"bpm": 165.0,
-	"icon": "sonicless",
-	"color": "#FF0050"
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 165
 }

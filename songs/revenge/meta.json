@@ -1,6 +1,17 @@
 {
-	"displayName": "revenge",
-	"bpm": 130.0,
+	"customValues": {},
+	"color": "#9271EB",
+	"opponentModeAllowed": true,
 	"icon": "x",
-	"color": "#7E71FD"
+	"difficulties": [
+		"hard",
+		"encore",
+		"legacy"
+	],
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "revenge",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 130
 }

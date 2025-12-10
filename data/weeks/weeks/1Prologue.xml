@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-week>
-<week name="Betrayal" chars="" sprite="tutorial">
+<week weekBG="friends" name="Betrayal" chars="" sprite="tutorial">
 	<song>best-friends-forever</song>
 	<song>Tyrant</song>
 	<song>Futile-Resistance</song>

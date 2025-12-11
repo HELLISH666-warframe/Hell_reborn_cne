@@ -2,8 +2,8 @@
 	"opponentModeAllowed": false,
 	"icon": "tailsbff",
 	"difficulties": [
-		"encore",
-		"hard"
+		"hard",
+		"encore"
 	],
 	"color": "#FF0050",
 	"coopAllowed": false,

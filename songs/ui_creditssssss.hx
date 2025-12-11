@@ -6,8 +6,6 @@ public var blackFlash:FlxSprite;
 var curSong:String = PlayState.SONG.meta.name;
 var diff:String = PlayState.difficulty;
 var creditPath = Paths.file("songs/" + curSong + "/credits-" + diff + ".txt");
-function create() {
-}
 function onSongStart() {
 	if (Assets.exists('songs/'+curSong+'/credits-'+diff+'.txt') || Assets.exists('songs/'+curSong+'/credits-'+diff+'.txt')){
 	openCredits(Assets.getText('songs/'+curSong+'/credits-'+diff+'.txt'));
@@ -16,24 +14,23 @@ function onSongStart() {
 		openCredits(Paths.getTextFromFile('data/'+Paths.formatToSongPath(curSong).toLowerCase()+'/credits'+diff+'txt'));
 	}
 }
-function openCredits(textBlah:Dynamic)
-{		
-	var something:FlxSprite = new FlxSprite(FlxG.width+300, -20).makeGraphic(600, FlxG.height+150, 0xFFac0001);
+function openCredits(textBlah:Dynamic) {		
+	var something = new FlxSprite(FlxG.width+300, -20).makeGraphic(600, FlxG.height+150, 0xFFac0001);
 	something.scrollFactor.set(0, 0);
-	something.cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 1]];
+	something.camera=camOther;
 	something.scale.x = 3.3;
 	something.angle = -3;
 	add(something);	
 
-	var something2:FlxSprite = new FlxSprite(-37, -400).makeGraphic(600, 280, 0xFFe8d8c0);
+	var something2 = new FlxSprite(-37, -400).makeGraphic(600, 280, 0xFFe8d8c0);
 	something2.scrollFactor.set(0, 0);
-	something2.cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 1]];
+	something2.camera = camOther;
 	something2.angle = -3;
 	add(something2);
 
-	var songNameThing:ShakyText = new ShakyText(-350, -200, 0, PlayState.SONG.meta.displayName, 100, Paths.font('Futura.otf'), 0xFFe9a642, 0xFFac0001, 5);
+	var songNameThing = new ShakyText(-350, -200, 0, PlayState.SONG.meta.displayName, 100, Paths.font('Futura.otf'), 0xFFe9a642, 0xFFac0001, 5);
 	songNameThing.scrollFactor.set(0, 0);
-	songNameThing.cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 1]];
+	songNameThing.camera = camOther;
 	songNameThing.angle = -3;
 	add(songNameThing);	
 
@@ -42,19 +39,19 @@ function openCredits(textBlah:Dynamic)
 		fixTextSize(songNameThing.shakyText, something2, -100);
 	}
 
-	var creditsThing:FlxText = new FlxText(-350, 200, 0, "Coders: \n\nArtists: \n\nMusicians: \n\nCharters: \n", 35);
+	var creditsThing = new FlxText(-350, 200, 0, "Coders: \n\nArtists: \n\nMusicians: \n\nCharters: \n", 35);
 	creditsThing.color = 0xFF19181a;
 	creditsThing.scrollFactor.set(0, 0);
 	creditsThing.font = Paths.font('Futura.otf');
-	creditsThing.cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 1]];
+	creditsThing.camera = camOther;
 	creditsThing.angle = -3;
 	add(creditsThing);	
 
-	var creditsThing2:FlxText = new FlxText(-550, 200, 0, textBlah, 35);
+	var creditsThing2 = new FlxText(-550, 200, 0, textBlah+'\n', 35);
 	creditsThing2.color = 0xFFe8d8c0;
 	creditsThing2.scrollFactor.set(0, 0);
 	creditsThing2.font = Paths.font('Futura.otf');
-	creditsThing2.cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 1]];
+	creditsThing2.camera = camOther;
 	creditsThing2.angle = -3;
 	add(creditsThing2);
 		
@@ -124,7 +121,7 @@ class ShakyText extends FlxText // shaky shaky
             shakyText.angle = angle;
             shakyText.visible = visible;
             shakyText.size = size+1;
-            shakyText.cameras = cameras;
+            shakyText.camera = camOther;
             shakyText.text = text;
             shake();
         }else{

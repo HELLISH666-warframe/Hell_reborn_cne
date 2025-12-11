@@ -12,6 +12,7 @@ function postCreate() {
 
 function onEvent(_) {
 	if (_.event.name == 'Cinematics') {
+		for(i in [upperBar,lowerBar]) FlxTween.cancelTweensOf(i, ['y']);
 		var speed:Float = Std.parseFloat(_.event.params[1]);
 		if (_.event.params[0] == true){
 		FlxTween.tween(upperBar, {y: 0}, speed, {ease: FlxEase.linear});

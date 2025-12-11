@@ -1,0 +1,13 @@
+{
+	"params": [
+		{
+			"name": "Time",
+			"type": "String",
+			"defaultValue": 1
+		},{
+			"name": "Color",
+			"type": "DropDown('Red', 'Black', 'Purple','White')",
+			"defValue": "Black"
+		}
+	]
+}

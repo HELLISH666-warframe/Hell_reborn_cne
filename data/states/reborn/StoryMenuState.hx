@@ -52,7 +52,7 @@ function create(){
 
 	redThing = new FlxSprite(FlxG.width+50, FlxG.height-350).makeGraphic(FlxG.width, 400, 0xFfac0001);
 	difficultySprite = new FlxSprite(0, 0);
-	blackishGrayThing = new FlxSprite(FlxG.width+425, 0).makeGraphic(655, FlxG.height+150, 0xFF19181a);
+	blackishGrayThing = new FlxSprite(FlxG.width+425, 0).makeGraphic(440, FlxG.height+150, 0xFF19181a);
 	whiteThing = new FlxSprite(-25, -350).makeGraphic(650, 280, 0xFFe8d8c0);
 
 	weekText = new ShakyText(0, -480, 0, loadedWeeks.weeks[curWeek].id.toUpperCase(), 100, Paths.font('Futura.otf'), 0xFF19181a, 0xFFac0001, 5);
@@ -113,6 +113,7 @@ function create(){
 
 function changeDifficulty(who:Int = 0) {
 	curDifficulty = FlxMath.wrap(curDifficulty + who, 0, loadedWeeks.weeks[curWeek].difficulties.length-1);
+	trace("jfhuirehgu");
 
 	var currentImage:FlxGraphic = Paths.image('menus/storymenu/difficulties/' +loadedWeeks.weeks[curWeek].difficulties[curDifficulty]);
 	difficultySprite.loadGraphic(currentImage);
@@ -144,17 +145,16 @@ function changeWeek(who:Int = 0){
 	changeDifficulty(0);
 
 	FlxTween.tween(weekText, {x: whiteThing.x+whiteThing.width/2-weekText.width/2, y: whiteThing.y+whiteThing.height/2-weekText.height/2}, 0.2, {ease: FlxEase.elasticOut});
-	FlxTween.tween(trackText, {x: blackishGrayThing.x+blackishGrayThing.width/2-trackText.width/2, y: whiteThing.y+whiteThing.height+20}, 0.15, {ease: FlxEase.elasticOut});
-	FlxTween.tween(weekDescription, {x: blackishGrayThing.x+blackishGrayThing.width/2-weekDescription.width/2, y: (FlxG.height-weekDescription.height)-5}, 0.15, {ease: FlxEase.elasticOut});
+	FlxTween.tween(trackText, {x: blackishGrayThing.x+blackishGrayThing.width/1.49-trackText.width/2, y: whiteThing.y+whiteThing.height+20}, 0.15, {ease: FlxEase.elasticOut});
+	FlxTween.tween(weekDescription, {x: blackishGrayThing.x+blackishGrayThing.width/1.49-weekDescription.width/2, y: (FlxG.height-weekDescription.height)-5}, 0.15, {ease: FlxEase.elasticOut});
 }
 
-var no_flavor:Bool = false;
 function selectWeek(){
 	FlxTween.tween(weekBG, {y: -100-weekBG.height}, 1, {ease: FlxEase.elasticOut});
 	FlxTween.tween(redThing, {y: FlxG.height+50+redThing.height}, 0.3, {ease: FlxEase.elasticOut});
 	FlxTween.tween(difficultySprite, {y: FlxG.height+50+redThing.height}, 0.3, {ease: FlxEase.elasticOut});
 	FlxTween.tween(bestScore, {y: FlxG.height+50+redThing.height}, 0.3, {ease: FlxEase.elasticOut, onComplete: function(posi:FlxTween){
-		PlayState.loadWeek(weeklist.weeks[curWeek], difficulties[curDifficulty_storymode]);
+		PlayState.loadWeek(loadedWeeks.weeks[curWeek], loadedWeeks.weeks[curWeek].difficulties[curDifficulty]);
 		FlxG.switchState(new PlayState());
 	}});
 }
@@ -166,10 +166,8 @@ function update(elapsed:Float){
 
 	bestScore.text = 'PERSONAL BEST:\n'+lerpedBestScore+'\n';
 
-	if (!selectingDifficulty)
-		if (controls.UP_P||controls.DOWN_P) changeWeek(controls.UP_P?-1:1);
-	else if (!no_flavor)
-		if (controls.LEFT_P||controls.RIGHT_P) changeDifficulty(controls.LEFT_P?-1:1);
+	if ((!selectingDifficulty) && (controls.UP_P||controls.DOWN_P)) changeWeek(controls.UP_P?-1:1);
+	else if (selectingDifficulty) if(controls.LEFT_P||controls.RIGHT_P) changeDifficulty(controls.LEFT_P?-1:1);
 	
 	if (controls.ACCEPT){
 		if (!selectingDifficulty) {
@@ -177,7 +175,7 @@ function update(elapsed:Float){
 			FlxTween.tween(whiteThing, {y: -350}, 0.25, {ease: FlxEase.smootherStepInOut});
 			FlxTween.tween(trackText, {y: -350}, 0.25, {ease: FlxEase.smootherStepInOut});
 			FlxTween.tween(weekDescription, {y: -350}, 0.25, {ease: FlxEase.smootherStepInOut});
-			FlxTween.tween(weekText, {y: -350}, 0.25, {ease: FlxEase.smootherStepInOut, onComplete: function(frtie:FlxTween){
+			FlxTween.tween(weekText, {y: -350}, 0.25, {ease: FlxEase.smootherStepInOut, onComplete: ()->{
 				selectingDifficulty = true;
 				difficultySprite.visible = true;
 				bestScore.visible = true;
@@ -188,7 +186,6 @@ function update(elapsed:Float){
 	if (controls.BACK){
 		if (!selectingDifficulty){
 			FlxG.sound.play(Paths.sound('cancelMenu'));
-			no_flavor = true;
 			FlxG.switchState(new MainMenuState());
 		}else{
 			FlxTween.tween(blackishGrayThing, {x: -15}, 0.4, {ease: FlxEase.smoothStepInOut, onComplete: function(posi:FlxTween){

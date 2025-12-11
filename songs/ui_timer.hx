@@ -31,8 +31,6 @@ function create() {
     add(timeTxt);
     for(i in [timeBar,timeTxt,timeBarBG])i.camera=camHUD;
 }
-function postCreate()
-    budAndBludsShitVar = [scoreTxt, healthBarBG, healthBar, iconP1, iconP2, accuracyTxt, missesTxt,timeTxt,timeBarBG,timeBar];
 var editableTime:Float;
 function update(elapsed:Float) {
     var songCalc:Float = (songLength - Conductor.songPosition);

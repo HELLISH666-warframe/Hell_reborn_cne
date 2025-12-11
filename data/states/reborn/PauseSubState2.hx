@@ -1,4 +1,5 @@
 import funkin.backend.utils.FunkinParentDisabler;
+import funkin.editors.charter.Charter;
 import funkin.options.OptionsMenu;
 import flixel.util.FlxStringUtil;
 import flixel.system.FlxSound;
@@ -25,6 +26,7 @@ public var timeTxt:FlxText;
 public var scoreTxt:FlxText;
 
 var readyToPress:Bool = false;
+
 function create() {
     parentDisabler = new FunkinParentDisabler();
     add(parentDisabler);
@@ -181,7 +183,7 @@ function create() {
     }});
 
     FlxTween.tween(PlayState.instance.camHUD, {alpha: 0}, 0.4, {ease: FlxEase.smootherStepInOut});
-    //FlxTween.tween(PlayState.instance.camOther, {alpha: 0}, 0.4, {ease: FlxEase.smootherStepInOut});
+    FlxTween.tween(FlxG.cameras.list[2], {alpha: 0}, 0.4, {ease: FlxEase.smootherStepInOut});
     FlxTween.tween(PlayState.instance.camGame, {zoom: 1}, 0.1, {ease: FlxEase.smootherStepInOut, onComplete: function(fkf){
         forceCamera = true;
     }});
@@ -212,7 +214,7 @@ function update(elapsed:Float){
                 case 'Change Options': FlxG.switchState(new OptionsMenu((_) -> FlxG.switchState(new PlayState())));
                 case 'Quit':
                     if (PlayState.chartingMode && Charter.undos.unsaved) PlayState.instance.saveWarn(false);
-                    else { PlayState.resetSongInfos();
+                    else {
                         if (Charter.instance != null) Charter.instance.__clearStatics();
         
                         // prevents certain notes to disappear early when exiting  - Nex
@@ -236,7 +238,7 @@ function exit() {
     FlxG.camera.removeShader(thisShader);
     //FlxG.sound.destroySound(pauseMusic);
     FlxTween.tween(PlayState.instance.camHUD, {alpha: 1}, 0.4, {ease: FlxEase.smootherStepInOut});
-    //FlxTween.tween(PlayState.instance.camOther, {alpha: 1}, 0.4, {ease: FlxEase.smootherStepInOut});
+    FlxTween.tween(FlxG.cameras.list[2], {alpha: 1}, 0.4, {ease: FlxEase.smootherStepInOut});
     FlxTween.tween(PlayState.instance.camGame, {zoom: camZoom}, 0.1, {ease: FlxEase.smootherStepInOut});
     close();
 }

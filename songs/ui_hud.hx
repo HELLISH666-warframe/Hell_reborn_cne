@@ -4,8 +4,6 @@ import flixel.text.FlxTextAlign;
 import flixel.text.FlxTextBorderStyle;
 import flixel.util.FlxStringUtil;
 import flixel.ui.FlxBar;
-public var iconP1new:HealthIcon;
-public var iconP2new:HealthIcon;
 public var botplayTxt:FlxText;
 public var songLength:Float = 0;
 public var healthBar1:CherryBar;
@@ -15,31 +13,19 @@ function create() {
     healthBar1 = new CherryBar(FlxG.width-20, FlxG.height-(FlxG.height*50)/100, 1, 2, 'height', FlxG.height, 0xFFffffff);
     healthBar2 = new CherryBar(0, FlxG.height-(FlxG.height*50)/100, 1, 2, 'height', FlxG.height, 0xFFffffff);
 
-	iconP1new = new HealthIcon(boyfriend.getIcon(), true);
-	iconP1new.y = (FlxG.height/2)-50;
-	add(iconP1new);
-
-	iconP2new = new HealthIcon(dad.getIcon(), false);
-	iconP2new.y = (FlxG.height/2)-50;
-	add(iconP2new);
-
     healthBar1.scrollFactor.set(0, 0);
     healthBar2.scrollFactor.set(0, 0);
     
 }
 function postCreate() {
+	iconP1.y=iconP2.y=(FlxG.height/2)-50;
 	remove(healthBar);
 	remove(healthBarBG);
-    remove(iconP1);
-    remove(iconP2);
 	remove(scoreTxt);
 	remove(missesTxt);
-	remove(accuracyTxt);
 
     add(healthBar1);
     add(healthBar2);
-    iconP1new.cameras = [camHUD];
-    iconP2new.cameras = [camHUD];
     healthBar1.cameras = [camHUD];
     healthBar2.cameras = [camHUD];
 
@@ -80,18 +66,8 @@ function postCreate() {
 }
 
 function update(elapsed:Float) {
-
-    var mult:Float = FlxMath.lerp(1, iconP1new.scale.x, FlxMath.bound(1 - (elapsed * 9), 0, 1));
-    iconP1new.scale.set(mult, mult);
-    iconP1new.updateHitbox();
-
-	var mult:Float = FlxMath.lerp(1, iconP2new.scale.x, FlxMath.bound(1 - (elapsed * 9), 0, 1));
-	iconP2new.scale.set(mult, mult);
-	iconP2new.updateHitbox();
-
-
-	iconP1new.x = healthBar1.x - healthBar1.width/2 - iconP1new.width;
-	iconP2new.x = healthBar2.x + healthBar2.width/2;
+	iconP1.x = healthBar1.x - healthBar1.width/2 - iconP1.width;
+	iconP2.x = healthBar2.x + healthBar2.width/2;
 
     healthBar1.currentAmount = health;
 	opponentHealth = Math.max(0, 2-health);
@@ -100,16 +76,9 @@ function update(elapsed:Float) {
         healthBar1.alpha = FlxMath.lerp(healthBar1.alpha, 0, elapsed*2);
     else
         healthBar1.alpha = FlxMath.lerp(healthBar1.alpha, 1, elapsed*2);*/
-	var curTime:Float = Conductor.songPosition;
-	if(curTime < 0) curTime = 0;
-	songPercent = (curTime / songLength);
-
-	var songCalc:Float = (songLength - curTime);
-	songCalc = curTime;
-
-	var secondsTotal:Int = Math.floor(songCalc / 1000);
+	var secondsTotal:Float = (songLength - Conductor.songPosition);
 	if(secondsTotal < 0) secondsTotal = 0;
-	timeTxt.text = 'Time:  '+ FlxStringUtil.formatTime(secondsTotal, false);
+	timeTxt.text = 'Time:  '+ FlxStringUtil.formatTime(secondsTotal/1000, false);
 
 	accuracyTxt.text = 'Accuracy:'  + "-%" + CoolUtil.quantize(accuracy * 100, 100)  + curRating.rating;
 }
@@ -152,14 +121,8 @@ class CherryBar extends FlxSprite{
 		return Math.floor((currentAmount * 100)/maxAmount);
 	}
 }
-function beatHit(curBeat:Int) {
-    
-	iconP1new.scale.set(1.2, 1.2);
-	iconP2new.scale.set(1.2, 1.2);
-
-	iconP1new.updateHitbox();
-	iconP2new.updateHitbox();
-}
 function onSongStart() {
 	songLength = FlxG.sound.music.length;
 }
+
+updateIconPositions = () -> null;

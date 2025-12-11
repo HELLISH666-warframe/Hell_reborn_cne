@@ -1,0 +1,24 @@
+TooSlowFlashinShit.hx________PACKSEP________var screenstatic = new FlxSprite(0,0);
+
+function postCreate() {
+	screenstatic.frames = Paths.getSparrowAtlas('stages/exe/screenstatic');
+	screenstatic.animation.addByPrefix('screenstatic', 'screenstatic', 24, true);
+	screenstatic.animation.play('screenstatic', true);
+	add(screenstatic);
+	screenstatic.camera=camOther;
+	screenstatic.alpha = 0.0001;
+}
+
+var AdiosHomosexual:FlxTimer = new FlxTimer();
+
+function onEvent(_) {
+	if (_.event.name == 'TooSlowFlashinShit') {
+		screenstatic.alpha=0.4;
+		screenstatic.animation.play('screenstatic',true);
+		FlxG.sound.play(Paths.sound('simplejumpsound'), 0.3);
+		AdiosHomosexual.start(0.15,()-> {screenstatic.alpha=0.0001;});
+	}
+}________PACKSEP________{
+	"params": [
+	]
+}

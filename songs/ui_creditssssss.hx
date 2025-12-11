@@ -1,8 +1,3 @@
-import funkin.editors.charter.Charter;
-import flixel.text.FlxTextAlign;
-import flixel.text.FlxTextBorderStyle;
-import flixel.ui.FlxBar;
-public var blackFlash:FlxSprite;
 var curSong:String = PlayState.SONG.meta.name;
 var diff:String = PlayState.difficulty;
 var creditPath = Paths.file("songs/" + curSong + "/credits-" + diff + ".txt");

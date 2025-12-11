@@ -4,7 +4,6 @@ import flixel.text.FlxTextAlign;
 import flixel.text.FlxTextBorderStyle;
 import flixel.util.FlxStringUtil;
 import flixel.ui.FlxBar;
-public var botplayTxt:FlxText;
 public var songLength:Float = 0;
 public var healthBar1:CherryBar;
 public var healthBar2:CherryBar;
@@ -15,7 +14,6 @@ function create() {
 
     healthBar1.scrollFactor.set(0, 0);
     healthBar2.scrollFactor.set(0, 0);
-    
 }
 function postCreate() {
 	iconP1.y=iconP2.y=(FlxG.height/2)-50;
@@ -23,6 +21,7 @@ function postCreate() {
 	remove(healthBarBG);
 	remove(scoreTxt);
 	remove(missesTxt);
+	remove(accuracyTxt);
 
     add(healthBar1);
     add(healthBar2);
@@ -65,22 +64,32 @@ function postCreate() {
 	add(timeTxt);
 }
 
-function update(elapsed:Float) {
+function postUpdate(elapsed:Float) {
 	iconP1.x = healthBar1.x - healthBar1.width/2 - iconP1.width;
 	iconP2.x = healthBar2.x + healthBar2.width/2;
 
     healthBar1.currentAmount = health;
 	opponentHealth = Math.max(0, 2-health);
 	healthBar2.currentAmount = opponentHealth;
-    /*if (healthBar1.percent == 100)
+    if (healthBar1.percent == 100)
         healthBar1.alpha = FlxMath.lerp(healthBar1.alpha, 0, elapsed*2);
     else
-        healthBar1.alpha = FlxMath.lerp(healthBar1.alpha, 1, elapsed*2);*/
+        healthBar1.alpha = FlxMath.lerp(healthBar1.alpha, 1, elapsed*2);
 	var secondsTotal:Float = (songLength - Conductor.songPosition);
 	if(secondsTotal < 0) secondsTotal = 0;
 	timeTxt.text = 'Time:  '+ FlxStringUtil.formatTime(secondsTotal/1000, false);
 
-	accuracyTxt.text = 'Accuracy:'  + "-%" + CoolUtil.quantize(accuracy * 100, 100)  + curRating.rating;
+	accuracyTxt.text = 'Accuracy:'  + "-%" + CoolUtil.quantize(accuracy * 100, 100)+' ' + curRating.rating;
+
+	if (healthBar1.percent < 20)
+		iconP1.animation.curAnim.curFrame = 1;
+	else
+		iconP1.animation.curAnim.curFrame = 0;
+
+	if (healthBar2.percent < 20)
+		iconP2.animation.curAnim.curFrame = 1;
+	else
+		iconP2.animation.curAnim.curFrame = 0;
 }
 class CherryBar extends FlxSprite{
 	public var currentAmount:Float;
@@ -116,6 +125,7 @@ class CherryBar extends FlxSprite{
 
 		super.update(elapsed);
 	}
+	public var percent(get, never):Int;
 	function get_percent():Int
 	{
 		return Math.floor((currentAmount * 100)/maxAmount);

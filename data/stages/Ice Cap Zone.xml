@@ -3,7 +3,6 @@
     <sprite name="back" x="100" y="600" sprite="Back" scale="3"/>
     <sprite name="bg2" x="100" y="-400" sprite="Bg2" scale="3"/>
 	<sprite name="floor" x="100" y="-400" sprite="Floor" scale="3"/>
-	<player x="2100" y="100" camxoffset="-300" camyoffset="0" />
-	<girlfriend x="300" y="70" camxoffset="0" camyoffset="0" />
+	<player x="1850" y="100" camxoffset="-300" camyoffset="0" />
 	<opponent x="200" y="350" camxoffset="-200" camyoffset="-200" />
 </stage>

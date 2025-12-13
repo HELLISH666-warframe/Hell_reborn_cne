@@ -1,6 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
-<character sprite="BOYFRIEND" icon="bf" color="#00a8ff" x="340" y="540" flipX="true" camx="460" camy="-340">
+<character x="340" y="540" sprite="BOYFRIEND" camx="460" camy="-340" color="#00A8FF">
 	<anim name="idle" anim="Idle" x="405" y="399"/>
 	<anim name="singLEFT" anim="Left0" x="466" y="392"/>
 	<anim name="singDOWN" anim="Down0" x="391" y="354"/>

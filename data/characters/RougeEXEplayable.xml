@@ -1,9 +1,0 @@
-<!DOCTYPE codename-engine-character>
-<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
-<character sprite="RougeEXE" icon="rouge" color="#56026e" x="880" flipX="true" camx="-320" camy="180" holdTime="6.1" scale="0.9">
-	<anim name="idle" anim="idle" x="92.22222222222221" y="-161.11111111111111"/>
-	<anim name="singDOWN" anim="down" x="166.66666666666666" y="-97.77777777777777"/>
-	<anim name="singRIGHT" anim="right" x="55.55555555555556" y="-70"/>
-	<anim name="singLEFT" anim="left" x="26.666666666666664" y="-78.88888888888889"/>
-	<anim name="singUP" anim="up" x="191.11111111111111" y="-8.88888888888889"/>
-</character>

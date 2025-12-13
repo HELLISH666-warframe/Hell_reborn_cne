@@ -1,9 +1,8 @@
 <!DOCTYPE codename-engine-character>
-<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
-<character sprite="knuckles Purple" icon="knuckle" color="#cc3333" x="450" y="410" camx="530" camy="-120" scale="1.3">
-	<anim name="idle" anim="knuxidle" x="303.8461538461538" y="106.92307692307692" fps="28"/>
-	<anim name="singDOWN" anim="knuxdown" x="239.23076923076923" y="41.53846153846154"/>
-	<anim name="singUP" anim="knuxup" x="263.8461538461538" y="218.46153846153845" fps="28"/>
-	<anim name="singRIGHT" anim="knuxleft" x="123.07692307692307" y="92.3076923076923" fps="28"/>
-	<anim name="singLEFT" anim="knuxright" x="334.6153846153846" y="87.6923076923077" fps="28"/>
+<character x="450" y="410" sprite="knuckles Purple" scale="1.3" flipX="true" camx="530" camy="-120" icon="knuckle" color="#CC3333">
+	<anim name="idle" anim="knuxidle" x="303.85" y="106.92" fps="28"/>
+	<anim name="singDOWN" anim="knuxdown" x="239.23" y="41.54"/>
+	<anim name="singUP" anim="knuxup" x="263.85" y="218.46" fps="28"/>
+	<anim name="singRIGHT" anim="knuxleft" x="123.08" y="92.31" fps="28"/>
+	<anim name="singLEFT" anim="knuxright" x="334.62" y="87.69" fps="28"/>
 </character>

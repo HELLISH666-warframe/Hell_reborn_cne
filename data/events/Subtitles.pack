@@ -1,0 +1,38 @@
+Subtitles.hx________PACKSEP________var subtitle:FlxText;
+var fade:Float;
+
+function postCreate() {
+	subtitle = new FlxText(445,500,400,'',40);
+	add(subtitle).camera=camOther;
+}
+
+/*function update(elapsed:Float) {
+	fade += 1;
+	if (fade > 200)subtitle.text='';
+}*/
+
+function onEvent(_) {
+	if (_.event.name == 'Subtitles'){
+		subtitle.text=_.event.params[0];
+		fade = 0;
+		if(subtitle.text==''){trace("Oh_ok.");
+			return;
+		}
+		subtitle.font=Paths.font("futura.otf");
+		subtitle.color=_.event.params[1];
+		trace(_.event.params[1],subtitle.color);
+		//setTextColor('subtitle', value2)
+	}
+}________PACKSEP________{
+	"params": [
+		{
+			"name": "Text",
+			"type": "String",
+			"defaultValue": "Balls"
+		},{
+			"name": "Color",
+			"type": "ColorWheel",
+			"defaultValue": "0xFFFFFFF"
+		}
+	]
+}

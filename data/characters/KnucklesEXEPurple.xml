@@ -1,9 +1,8 @@
 <!DOCTYPE codename-engine-character>
-<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
-<character sprite="Knuckles EXE Purple" icon="knux" color="#5e0000" x="-130" y="40" camx="60" camy="220" holdTime="6.1" scale="1.1">
-	<anim name="idle" anim="Idle" x="-151.8181818181818" y="-89.99999999999999"/>
-	<anim name="singDOWN" anim="Down" x="-136.36363636363635" y="-181.8181818181818"/>
-	<anim name="singUP" anim="Up" x="-98.18181818181817" y="-70.9090909090909"/>
-	<anim name="singRIGHT" anim="Right" x="-218.18181818181816" y="-175.45454545454544"/>
-	<anim name="singLEFT" anim="Left" x="40" y="-137.27272727272725"/>
+<character x="-130" y="40" sprite="Knuckles EXE Purple" scale="1.1" camx="60" camy="220" isPlayer="true" icon="knux" color="#5E0000" holdTime="6.1">
+	<anim name="idle" anim="Idle" x="-151.82" y="-90"/>
+	<anim name="singDOWN" anim="Down" x="-136.36" y="-181.82"/>
+	<anim name="singUP" anim="Up" x="-98.18" y="-70.91"/>
+	<anim name="singRIGHT" anim="Right" x="-218.18" y="-175.45"/>
+	<anim name="singLEFT" anim="Left" x="40" y="-137.27"/>
 </character>

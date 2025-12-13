@@ -1,8 +1,7 @@
 <!DOCTYPE codename-engine-character>
-<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
-<character sprite="ENCORE_BF" icon="bf" color="#31b0d1" x="-840" y="270">
+<character x="-840" y="270" sprite="ENCORE_BF" isPlayer="true" icon="bf" color="#31B0D1">
 	<anim name="singDOWN" anim="down instance" x="-7" y="-56"/>
-	<anim name="idle" anim="idle instance" x="345" y="0"/>
+	<anim name="idle" anim="idle instance" x="345"/>
 	<anim name="singDOWNmiss" anim="miss DOWN instance" x="-7" y="-53"/>
 	<anim name="singLEFTmiss" anim="miss LEFT instance" x="27" y="-1"/>
 	<anim name="singRIGHTmiss" anim="miss RIGHT instance" x="76" y="-24"/>

@@ -79,7 +79,7 @@ function postUpdate(elapsed:Float) {
 	if(secondsTotal < 0) secondsTotal = 0;
 	timeTxt.text = 'Time:  '+ FlxStringUtil.formatTime(secondsTotal/1000, false);
 
-	accuracyTxt.text = 'Accuracy:'  + "-%" + CoolUtil.quantize(accuracy * 100, 100)+' ' + curRating.rating;
+	accuracyTxt.text = 'Accuracy:'  + "-%(" + CoolUtil.quantize(accuracy * 100, 100)+')';
 
 	if (healthBar1.percent < 20)
 		iconP1.animation.curAnim.curFrame = 1;

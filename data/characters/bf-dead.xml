@@ -1,7 +1,0 @@
-<!DOCTYPE codename-engine-character>
-<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
-<character sprite="Bf_Dying" icon="bf" color="#00a8ff" x="340" y="540" flipX="true" camx="1330" camy="-720" scale="0.8">
-	<anim name="firstDeath" anim="Bf RUN" x="1412.5" y="600"/>
-	<anim name="deathConfirm" anim="BF Retry" x="1412.5" y="600"/>
-	<anim name="deathLoop" anim="BF Retry" x="1412.5" y="600"/>
-</character>

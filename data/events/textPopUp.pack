@@ -1,0 +1,33 @@
+textPopUp.hx________PACKSEP________var textPopUp:FlxText;
+
+function onEvent(_) {
+	if (_.event.name == 'textPopUp'){
+		textPopUp = new FlxText();
+		textPopUp.text=_.event.params[0];
+		textPopUp.size=20;
+		textPopUp.camera=camOther;
+		textPopUp.screenCenter(FlxAxes.X);
+		textPopUp.y=-textPopUp.height-5;
+		textPopUp.font=Paths.font("futura.otf");
+		textPopUp.color=_.event.params[1];
+		textPopUp.size=30;
+		add(textPopUp);
+		FlxTween.tween(textPopUp, {y: (FlxG.height-textPopUp.height)/2}, 0.4, {ease: FlxEase.elasticOut,onComplete: function(twn:FlxTween) {
+			FlxTween.tween(textPopUp, {alpha: 0}, 1, {ease: FlxEase.quintInOut,onComplete: function(twn:FlxTween) {
+			remove(textPopUp);
+		}});
+		}});
+	}
+}________PACKSEP________{
+	"params": [
+		{
+			"name": "Text",
+			"type": "String",
+			"defaultValue": "Balls"
+		},{
+			"name": "Color",
+			"type": "ColorWheel",
+			"defaultValue": "ffffff"
+		}
+	]
+}

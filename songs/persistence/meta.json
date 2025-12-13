@@ -1,6 +1,17 @@
 {
-	"displayName": "persistence",
-	"bpm": 130.0,
+	"customValues": {},
+	"color": "#9271FD",
+	"opponentModeAllowed": true,
 	"icon": "x",
-	"color": "#FF0050"
+	"difficulties": [
+		"hard",
+		"encore",
+		"legacy"
+	],
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "persistence",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 130
 }

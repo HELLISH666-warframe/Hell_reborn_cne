@@ -1,7 +1,0 @@
-<!DOCTYPE codename-engine-character>
-<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
-<character sprite="senpaiDeath" icon="senpai-pixel" color="#ffaa6f" x="150" y="200" antialiasing="false" camx="260" camy="-290" scale="6">
-	<anim name="firstDeath" anim="Senpai Pre Explosion" fps="12"/>
-	<anim name="deathConfirm" anim="Senpai Pre Explosion" x="0" y="-168.33333333333334"/>
-	<anim name="deathLoop" anim="Senpai Pre Explosion" x="1.6666666666666667" y="-186.66666666666666" fps="12"/>
-</character>

@@ -1,0 +1,22 @@
+BlackOut.hx________PACKSEP________var blackFlash = new FunkinSprite(-800, -900).makeGraphic(FlxG.width*2, FlxG.height*2, 0xFF000000);
+//Og_was_a_fucking_sprite?????
+
+function postCreate() {
+	blackFlash.scrollFactor.set(0,0);
+	blackFlash.screenCenter();
+	insert(members.indexOf(dad)+2,blackFlash);
+	blackFlash.alpha=0.001;
+}
+
+function onEvent(_) 
+	if (_.event.name == 'BlackOut')
+		_.event.params[0] ? blackFlash.alpha=1 : blackFlash.alpha=0.001;
+________PACKSEP________{
+	"params": [
+		{
+			"name": "Show?",
+			"type": "Bool",
+			"defaultValue": true
+		}
+	]
+}

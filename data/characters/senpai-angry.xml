@@ -1,9 +1,0 @@
-<!DOCTYPE codename-engine-character>
-<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
-<character sprite="pissed senpai" icon="senpai-pixel" color="#ffaa6f" x="150" y="200" antialiasing="false" camx="260" camy="-270" scale="6">
-	<anim name="idle" anim="idle" x="0.3333333333333333" y="0"/>
-	<anim name="singUP" anim="up" x="0.3333333333333333" y="0"/>
-	<anim name="singRIGHT" anim="left" x="0.3333333333333333" y="0"/>
-	<anim name="singLEFT" anim="right" x="0.3333333333333333" y="0"/>
-	<anim name="singDOWN" anim="down" x="0.3333333333333333" y="0"/>
-</character>

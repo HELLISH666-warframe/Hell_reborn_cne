@@ -1,9 +1,8 @@
 <!DOCTYPE codename-engine-character>
-<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
-<character sprite="Tails" icon="tails" color="#f18d0a" x="300" y="-10" camx="240" camy="270" holdTime="6.1" scale="0.7">
-	<anim name="idle" anim="Idle" x="375.7142857142857" y="-98.57142857142858" loop="true"/>
-	<anim name="singUP" anim="Up" x="1431.4285714285716" y="88.57142857142858"/>
-	<anim name="singDOWN" anim="Down" x="400" y="-198.57142857142858"/>
-	<anim name="singLEFT" anim="Right" x="800" y="-45.714285714285715"/>
-	<anim name="singRIGHT" anim="Left" x="272.8571428571429" y="-145.71428571428572"/>
+<character x="300" y="-10" sprite="Tails" scale="0.7" camx="240" camy="270" isPlayer="true" icon="tails" color="#F18D0A" holdTime="6.1">
+	<anim name="idle" anim="Idle" x="375.71" y="-98.57" loop="true"/>
+	<anim name="singUP" anim="Up" x="1431.43" y="88.57"/>
+	<anim name="singDOWN" anim="Down" x="400" y="-198.57"/>
+	<anim name="singLEFT" anim="Right" x="800" y="-45.71"/>
+	<anim name="singRIGHT" anim="Left" x="272.86" y="-145.71"/>
 </character>

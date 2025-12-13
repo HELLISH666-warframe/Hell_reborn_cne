@@ -1,0 +1,46 @@
+RedTop.hx________PACKSEP________import flixel.util.FlxGradient;
+var redGradThing:Bool = false;
+var redGradSpeed:Float = 1;
+var redGradSPR = new FlxSprite(0,0);
+var redGradTwn:FlxTween;
+
+function postCreate() {
+	redGradSPR = FlxGradient.createGradientFlxSprite(FlxG.width, FlxG.height, [0xFFff0000, 0x00000000, 0xFFff0000]);
+	redGradSPR.camera = camHUD;
+	redGradSPR.alpha = 0.0001;
+	add(redGradSPR);
+}
+
+function update(elapsed:Float){
+	if (!redGradThing){
+		if (redGradTwn != null) redGradTwn.cancel();
+		redGradTwn = null;
+		redGradSPR.alpha = FlxMath.lerp(redGradSPR.alpha, 0, elapsed*redGradSpeed);
+	}else{
+		if (redGradTwn == null)
+			redGradTwn = FlxTween.tween(redGradSPR, {alpha: 1}, 1/redGradSpeed, {ease: FlxEase.smoothStepInOut, type: FlxTween.PINGPONG});
+		else
+			redGradTwn.duration = 1/redGradSpeed;
+	}
+}
+
+function onEvent(_) {
+	if (_.event.name == 'RedTop') {
+		if(_.event.params[0]){
+			redGradThing=true;
+			redGradSpeed=_.event.params[1];
+		} else redGradThing=false;
+	}
+}________PACKSEP________{
+	"params": [
+		{
+			"name": "Show?",
+			"type": "Bool",
+			"defaultValue": true
+		}, {
+			"name": "Alpha",
+			"type": "Float(0, 124456565, 0.01, 1)",
+			"defaultValue": "1"
+		}
+	]
+}

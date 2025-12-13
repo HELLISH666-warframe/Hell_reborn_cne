@@ -1,9 +1,8 @@
 <!DOCTYPE codename-engine-character>
-<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
-<character sprite="Metal Sonic Fire" icon="metal" color="#2744aa" x="-70" y="90" camx="-360" camy="80" holdTime="6.1" scale="0.7">
-	<anim name="idle" anim="Idle" x="-381.42857142857144" y="240.00000000000003"/>
-	<anim name="singUP" anim="Up" x="-425.7142857142857" y="250.00000000000003"/>
-	<anim name="singDOWN" anim="Down" x="-347.14285714285717" y="277.14285714285717"/>
-	<anim name="singLEFT" anim="Right" x="-417.14285714285717" y="251.42857142857144"/>
-	<anim name="singRIGHT" anim="Left" x="-425.7142857142857" y="231.42857142857144"/>
+<character x="-70" y="90" sprite="Metal Sonic Fire" scale="0.7" flipX="true" camx="-360" camy="80" icon="metal" color="#2744AA" holdTime="6.1">
+	<anim name="idle" anim="Idle" x="-381.43" y="240"/>
+	<anim name="singUP" anim="Up" x="-425.71" y="250"/>
+	<anim name="singDOWN" anim="Down" x="-347.14" y="277.14"/>
+	<anim name="singLEFT" anim="Right" x="-417.14" y="251.43"/>
+	<anim name="singRIGHT" anim="Left" x="-425.71" y="231.43"/>
 </character>

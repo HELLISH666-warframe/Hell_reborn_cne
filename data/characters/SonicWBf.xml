@@ -1,9 +1,0 @@
-<!DOCTYPE codename-engine-character>
-<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
-<character sprite="SonicWBf" icon="Sonic" color="#006bff" x="290" camx="-30" camy="270" holdTime="6.1">
-	<anim name="singLEFT" anim="SonicBf NOTE LEFT" x="84" y="-281"/>
-	<anim name="singUP" anim="SonicBf NOTE UP" x="72" y="-278"/>
-	<anim name="singDOWN" anim="SonicBf NOTE DOWN" x="10" y="-310"/>
-	<anim name="singRIGHT" anim="SonicBf NOTE RIGHT" x="70" y="-283"/>
-	<anim name="idle" anim="SonicBf idle dance" x="43" y="-288"/>
-</character>

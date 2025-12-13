@@ -9,6 +9,5 @@
 	<sprite name="Dead_Mountain" x="-300" y="-150" sprite="Dead Mountain" scroll="0.7"/>
 	<sprite name="Dead_Grass" x="-450" y="20" sprite="Dead Grass"/>
 	<player x="880" y="700" camxoffset="0" camyoffset="0" />
-	<girlfriend x="400" y="600" camxoffset="0" camyoffset="0" />
-	<opponent x="400" y="700" camxoffset="-200" camyoffset="-200" />
+	<opponent x="400" y="700" camxoffset="-100" camyoffset="0" />
 </stage>

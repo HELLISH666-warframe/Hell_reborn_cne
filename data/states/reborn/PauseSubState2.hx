@@ -223,6 +223,7 @@ function update(elapsed:Float){
                         CoolUtil.playMenuSong();
                         FlxG.switchState(PlayState.isStoryMode ? new StoryMenuState() : new FreeplayState());
                     }
+                case 'Exit to charter':FlxG.switchState(new Charter(PlayState.SONG.meta.name, PlayState.difficulty));
                 case 'Change Difficulty': generateStuff(true);
                 case 'Back': generateStuff(false);
                 case 'Easy': switchDifficulty(0);
@@ -275,6 +276,7 @@ function generateStuff(difficultyChange:Bool = false, tweenThatBih:Bool = true) 
     selectedStuff = new FlxTypedGroup<ShakyText>();
     if (!difficultyChange) {
         selectedStuffArr = ['Continue','Retry','Change Difficulty','Change Options','Quit'];
+        if(PlayState.chartingMode)selectedStuffArr.push('Exit to charter');
     }else{
         for(i in 0...PlayState.curSong.meta.difficulties.length)
         selectedStuffArr = [PlayState.curSong.meta.difficulties[i]];

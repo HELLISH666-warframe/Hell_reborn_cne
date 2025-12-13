@@ -1,6 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
-<character sprite="Mobian Bf Run" icon="bf" color="#00a8ff" x="580" y="730" flipX="true" camx="180" camy="-290">
+<character x="580" y="730" sprite="Mobian Bf Run" camx="180" camy="-290" icon="bf" color="#00A8FF">
 	<anim name="singLEFT" anim="Left0" x="523" y="407"/>
 	<anim name="singDOWN" anim="Down0" x="405" y="402"/>
 	<anim name="singUP" anim="Up0" x="411" y="445"/>

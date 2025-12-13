@@ -1,3 +1,4 @@
+import funkin.options.OptionsMenu;
 public static var bg:FlxSprite;
 public var options:Array<String> = ['StoryMode', 'FreePlay', 'Options', 'Extras'];
 public static var curOption:Int = 0;

@@ -1,9 +1,10 @@
-textPopUp.hx________PACKSEP________var textPopUp:FlxText;
+textPopUp.hx________PACKSEP________var textPopUp:FlxText = new FlxText();
 
 function onEvent(_) {
 	if (_.event.name == 'textPopUp'){
-		textPopUp = new FlxText();
 		textPopUp.text=_.event.params[0];
+		if(textPopUp.text=="")remove(textPopUp);
+		if(textPopUp.text=="")return;
 		textPopUp.size=20;
 		textPopUp.camera=camOther;
 		textPopUp.screenCenter(FlxAxes.X);
@@ -12,18 +13,15 @@ function onEvent(_) {
 		textPopUp.color=_.event.params[1];
 		textPopUp.size=30;
 		add(textPopUp);
-		FlxTween.tween(textPopUp, {y: (FlxG.height-textPopUp.height)/2}, 0.4, {ease: FlxEase.elasticOut,onComplete: function(twn:FlxTween) {
-			FlxTween.tween(textPopUp, {alpha: 0}, 1, {ease: FlxEase.quintInOut,onComplete: function(twn:FlxTween) {
-			remove(textPopUp);
-		}});
-		}});
+		trace("SHOULD_NOT_SEE_THIS_SHIT");
+		FlxTween.tween(textPopUp, {y: (FlxG.height-textPopUp.height)/2}, 0.4, {ease: FlxEase.elasticOut});
 	}
 }________PACKSEP________{
 	"params": [
 		{
 			"name": "Text",
 			"type": "String",
-			"defaultValue": "Balls"
+			"defaultValue": null
 		},{
 			"name": "Color",
 			"type": "ColorWheel",

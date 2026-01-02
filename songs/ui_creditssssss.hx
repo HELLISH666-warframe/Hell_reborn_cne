@@ -2,7 +2,7 @@ var curSong:String = PlayState.SONG.meta.name;
 var diff:String = PlayState.difficulty;
 var creditPath = Paths.file("songs/" + curSong + "/credits-" + diff + ".txt");
 function onSongStart() {
-	if (Assets.exists('songs/'+curSong+'/credits-'+diff+'.txt') || Assets.exists('songs/'+curSong+'/credits-'+diff+'.txt')){
+	if (Assets.exists('songs/'+curSong+'/credits-'+diff+'.txt')){
 	openCredits(Assets.getText('songs/'+curSong+'/credits-'+diff+'.txt'));
 	}else{
 		if (sys.FileSystem.exists('songs/'+Paths.formatToSongPath(curSong).toLowerCase()+'/credits.txt') || sys.FileSystem.exists('assets/data/'+Paths.formatToSongPath(curSong).toLowerCase()+'/credits.txt'))
@@ -53,8 +53,8 @@ function openCredits(textBlah:Dynamic) {
 	FlxTween.tween(something, {x: -20}, 0.3, {ease: FlxEase.expoIn, onComplete: function(posi:FlxTween){
 		FlxTween.tween(something2, {y: -70}, 0.2, {ease: FlxEase.expoIn, onComplete: function(paru:FlxTween){
 			FlxTween.tween(songNameThing, {x: something2.x+something2.width/2-songNameThing.width/2, y: something2.y+something2.height/2-songNameThing.height/2}, 0.2, {ease: FlxEase.elasticOut});
-			FlxTween.tween(something2, {"scale.y": 1.5}, 0.2, {ease: FlxEase.elasticOut, type: FlxEase.BACKWARD});
-			FlxTween.tween(something, {"scale.y": 0.6}, 0.2, {ease: FlxEase.elasticOut, type: FlxEase.BACKWARD});
+			FlxTween.tween(something2, {"scale.y": 1.5}, 0.2, {ease: FlxEase.elasticOut, type: FlxTween.BACKWARD});
+			FlxTween.tween(something, {"scale.y": 0.6}, 0.2, {ease: FlxEase.elasticOut, type: FlxTween.BACKWARD});
 			FlxTween.tween(creditsThing, {x: 10, y: 350}, 0.2, {ease: FlxEase.elasticOut, onComplete: function(posi:FlxTween){
 				FlxTween.tween(creditsThing2, {x: creditsThing.x+creditsThing.width+2, y: 340}, 0.2, {ease: FlxEase.elasticOut, onComplete: function(poru:FlxTween){
 					new FlxTimer().start(((1/Conductor.bpm)*100)+1, function(tmr:FlxTimer) {

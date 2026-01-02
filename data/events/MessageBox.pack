@@ -1,0 +1,15 @@
+MessageBox.hx________PACKSEP________function onEvent(_) 
+	if (_.event.name == 'MessageBox') Application.current.window.alert(_.event.params[1], _.event.params[0]);
+________PACKSEP________{
+	"params": [
+		{
+			"name": "Name",
+			"type": "String",
+			"defaultValue": "fuck"
+		},{
+			"name": "Text",
+			"type": "String",
+			"defaultValue": "Balls"
+		}
+	]
+}

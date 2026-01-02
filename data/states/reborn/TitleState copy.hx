@@ -1,25 +1,18 @@
 import flixel.addons.transition.FlxTransitionableState;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.input.keyboard.FlxKey;
-import flixel.system.FlxSound;
 import flixel.text.FlxText.FlxTextFormat;
 import flixel.text.FlxText.FlxTextFormatMarkerPair;
-import flixel.text.FlxText;
-import flixel.tweens.FlxEase;
-import flixel.tweens.FlxTween;
-import flixel.util.FlxColor;
-import flixel.util.FlxTimer;
-//import TTest;
+import funkin.backend.FunkinText;
 
 public static var initialized:Bool = false;
 public static var hasStarted:Bool = false;
 public static var introHasFinished:Bool = false;
-var switchToMainMenu:Bool = false;
+static var switchToMainMenu:Bool = false;
 
-static var sheddar = new CustomShader("glitchShader2");
+var sheddar:CustomShader = new CustomShader("glitchShader2");
 var markups:Array<FlxTextFormatMarkerPair> = [];
 var textArray:Array<String> = [];
-var step:Int = -1;
 
 var leText:FlxText;
 var red:FlxSprite;
@@ -29,16 +22,11 @@ public static var logo:FlxSprite;
 public static var logoWidth:Float;
 public static var logoHeight:Float;
 
+var particleGroup:FlxTypedGroup<TTest> = new FlxTypedGroup();
 var particleTimer:FlxTimer;
-
-public function new(switchToMainMenu:Bool = false){
-    super();
-	this.switchToMainMenu = switchToMainMenu;
-}
 
 function create() {
 	initialized=false;
-	FlxG.sound.music.time = 0;
 	bg = new FlxSprite();
 	bg.frames = Paths.getSparrowAtlas('menus/staticBACKGROUND2');
 	bg.antialiasing = Options.antialiasing;
@@ -62,10 +50,10 @@ function create() {
 	logoHeight = logo.height;
 
 	particleTimer = new FlxTimer().start(0.4, function(t:FlxTimer) {
-		add(new TTest(0, FlxG.random.float(0, FlxG.height), 150, 250, 30, 0xFFac0001, 0.5));
+		particleGroup.add(new TTest(0, FlxG.random.float(0, FlxG.height), 150, 250, 30, 0xFFac0001, 0.5));
 		t.reset(0.1);
 	});
-	add(new TTest(0, FlxG.random.float(0, FlxG.height), 150, 250, 30, 0xFFac0001, 0.5));
+	add(particleGroup);
 
 	leText = new FlxText(5, 5, 0, '', 50);
 	leText.font = Paths.font('futura.otf');
@@ -74,7 +62,7 @@ function create() {
 	leText.angle = -3;
 
 	var colors:Map<String, FlxColor> = [
-			"RED" => 0xFFac0001, "WHITE" => 0xFFe8d8c0,
+		"RED" => 0xFFac0001, "WHITE" => 0xFFe8d8c0,
 		"YELLOW" => 0xFFffdf02, "BLACK" => 0xFF19181a
 	];
 	var modes = [
@@ -87,9 +75,9 @@ function create() {
 		for (mode => boolshit in modes) {
 			var f:FlxTextFormat = new FlxTextFormat(colorvalue, boolshit[0], boolshit[1]);
 			var fBig:FlxTextFormat = new FlxTextFormat(colorvalue, boolshit[0], boolshit[1]);
-			/*@:privateAccess*/ f.format.size = 30;
-			markups.push(new FlxTextFormatMarkerPair(fBig, '<${mode}TITLE:$color>'));
-			markups.push(new FlxTextFormatMarkerPair(f, '<${mode}$color>'));
+			/*@:privateAccess */f.format.size = 30;
+			markups.push(new FlxTextFormatMarkerPair(fBig, '<'+mode+'TITLE:'+color+'>'));
+			markups.push(new FlxTextFormatMarkerPair(f, '<'+mode+color+'>'));
 		}
 	}
 	FlxG.camera.addShader(sheddar);
@@ -112,16 +100,17 @@ function create() {
 	}*/
 	if (switchToMainMenu) {
 		onEndIntro();
-		openSubState(new MainMenuSubState());
+		openSubState(new ModSubState('reborn/MainMenuSubState'));
 		add(logo);
 	}
 }
 
 var alreadyUsed:Array<Int> = [];
 
-private function getRandomFromArray():Int {
+function getRandomFromArray():Int {
 	var a:Int = FlxG.random.int(0, textArray.length - 1);
-	if (alreadyUsed.contains(a)) return getRandomFromArray();
+	if (alreadyUsed.contains(a))
+		return getRandomFromArray();
 	alreadyUsed.push(a);
 	return a;
 }
@@ -131,7 +120,6 @@ var time:Float = 0;
 function update(elapsed:Float) {
 	time+=elapsed;
 	sheddar.data.iTime.value=[time * elapsed];
-
 	if (hasStarted && !introHasFinished) {
 		if (alreadyUsed.length != textArray.length && FlxG.sound.music.time < 24200) {
 			sstep += 0.5;
@@ -148,19 +136,14 @@ function update(elapsed:Float) {
 		}
 	}
 	if (!introHasFinished && hasStarted) leText.x = (red.width - leText.width) / 2 - 15;
-	if (FlxG.keys.justPressed.ENTER)
+	if (controls.ACCEPT)
 		if (!introHasFinished) onEndIntro();
-		else evilOpenSubState(new ModSubState('reborn/MainMenuSubState'));
+		else fuck();
 }
 
-override public function evilOpenSubState(substate:FlxSubState) {
+function fuck() {
 	FlxTween.cancelTweensOf(logo);
-	FlxTween.tween(logo, {
-		x: 0,
-		y: 0,
-		"scale.x": 0.4,
-		"scale.y": 0.4
-	}, 0.3, {
+	FlxTween.tween(logo, {x: 0,y: 0,"scale.x": 0.4,"scale.y": 0.4}, 0.3, {
 		ease: FlxEase.smoothStepInOut,
 		onUpdate: function(t:FlxTween) {
 			logo.updateHitbox();
@@ -168,9 +151,10 @@ override public function evilOpenSubState(substate:FlxSubState) {
 	});
     FlxTween.tween(bg, {alpha: 0}, 0.3);
 	FlxTween.tween(logo, {alpha: 0}, 0.3);
+	switchToMainMenu=true;
 	new FlxTimer().start(0.2, ()->{
-	openSubState(substate);
-	});
+	openSubState(new ModSubState('reborn/MainMenuSubState'));
+	persistentUpdate = !persistentDraw;});
 }
 
 public function onStart() {
@@ -205,14 +189,10 @@ public function onEndIntro() {
 
 public static function closedMenuState() {
 	FlxTween.tween(logo, {x: (FlxG.width - logoWidth) / 2, y: (FlxG.height - logoHeight) / 2}, 0.3, {ease: FlxEase.smoothStepInOut});
-	FlxTween.tween(logo.scale, {x: 1, y: 1}, 0.3, {
-		ease: FlxEase.smoothStepInOut,
-		onUpdate: function(t:FlxTween) {
-			logo.updateHitbox();
-		},
+	FlxTween.tween(logo.scale, {x: 1, y: 1}, 0.3, {ease: FlxEase.smoothStepInOut,
+		onUpdate: function(t:FlxTween) {logo.updateHitbox();},
         onComplete: function(t:FlxTween){
-			FlxTween.tween(logo, {y: logo.y - 50}, 1.0, {
-				ease: FlxEase.quadInOut,
+			FlxTween.tween(logo, {y: logo.y - 50}, 1.0, {ease: FlxEase.quadInOut,
 				onComplete: function(t:FlxTween) {
 					FlxTween.tween(logo, {y: logo.y + 50}, 1.0, {ease: FlxEase.quadInOut, type: FlxEase.PINGPONG});
 				}
@@ -232,19 +212,17 @@ class TTest extends FlxSprite {
 	private var _x:Float = 0;
 	private var goal:Float;
 
-	public function new(x:Float = 0, y:Float = 0, minWidth:Int = 35, maxWidth:Int = 150, _height:Int = 50, _color:FlxColor = 0xFFffffff, duration:Float = 1,
-			?goal:Float) {
-		super(x, y);
+	function new(X:Float = 0, Y:Float = 0, minWidth:Int = 35, maxWidth:Int = 150, _height:Int = 50, _color:FlxColor = 0xFFffffff, duration:Float = 1, ?goal:Float) {
+		super(X, Y);
 		this.duration = duration;
 		makeGraphic(FlxG.random.int(minWidth, maxWidth), _height, _color);
 		this.curWidth = width;
-		this._x = x;
+		this._x = X;
 		this.goal = (goal == null ? FlxG.width : goal);
-		trace("Alive.");
 	}
 
-	public function update(elapsed:Float){
-		trace("DIE.");
+	override public function update(elapsed:Float) {
+		super.update(elapsed);
 		lifespan = Math.min(lifespan + elapsed, duration);
 		var scale:Float = Math.max(lifespan, 0) / duration;
 		if (lifespan < duration) {

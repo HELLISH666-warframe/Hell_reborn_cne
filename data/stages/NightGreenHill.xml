@@ -1,13 +1,14 @@
 <!DOCTYPE codename-engine-stage>
 <stage zoom="0.75" folder="stages/Green Hill/">
-    <sprite name="Stars" x="-300" y="-150" sprite="Stars" scroll="1.4"/>
-	<sprite name="Mountain" x="-300" y="-150" sprite="Mountain" scroll="0.7"/>
-	<sprite name="Grass" x="-450" y="20" sprite="Grass"/>
+    <sprite name="Stars" x="600" y="300" sprite="Stars" scroll="1.4" scale="2"/>
+	<sprite name="Mountain" x="600" y="300" sprite="Mountain" scroll="0.7" scale="2"/>
+	<sprite name="Grass" x="-450" y="1304" sprite="Grass"/>
 	<sprite name="Hand" x="-80" y="700" sprite="Hand" scale="0.5"/>
 	<!--Evil_fucked_up_shit.-->
 	<sprite name="Evilsky" x="-300" y="-150" sprite="evilsky" scroll="1.4"/>
-	<sprite name="Dead_Mountain" x="-300" y="-150" sprite="Dead Mountain" scroll="0.7"/>
-	<sprite name="Dead_Grass" x="-450" y="20" sprite="Dead Grass"/>
+	<sprite name="Dead_Mountain" x="600" y="300" sprite="Dead Mountain" scroll="0.7" scale="2"/>
+	<sprite name="Dead_Grass" x="-450" y="1304" sprite="Dead Grass"/>
 	<player x="880" y="700" camxoffset="0" camyoffset="0" />
+	<girlfriend x="400" y="600" camxoffset="0" camyoffset="0" />
 	<opponent x="400" y="700" camxoffset="-100" camyoffset="0" />
 </stage>

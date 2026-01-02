@@ -1,0 +1,28 @@
+Character alpha.hx________PACKSEP________
+function onEvent(_) {
+	if (_.event.name == 'Character alpha') {
+		for (s in _.event.params[0].split(",")) {
+			for (c in _.event.params[1].split(",")) {
+				for (a in _.event.params[2].split(",")) {
+			    	strumLines.members[Std.int(s)].characters[Std.int(c)].alpha=a;
+				}
+			}
+		}
+	}
+}________PACKSEP________{
+	"params": [
+		{
+			"name": "Strumline",
+			"type": "String",
+			"defaultValue": 0
+		}, {
+			"name": "Char",
+			"type": "String",
+			"defaultValue": 0
+		}, {
+			"name": "Alpha",
+			"type": "String",
+			"defaultValue": 0
+		}
+	]
+}
